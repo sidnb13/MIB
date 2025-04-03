@@ -6,7 +6,7 @@
 
 <p align="center">
     <!-- <h3 align="center">A <b>M</b>echanistic <b>I</b>nterpretability <b>B</b>enchmark</h3> -->
-        A benchmark for systematic comparison across <emph>featurization</emph> and <emph>localization</emph> methods.
+        A benchmark for systematic comparison of <em>featurization</em> and <em>localization</em> methods.
         <br/>
         <sub>
             <strong>circuits · causal variables · localization · featurization · faithfulness · interchange interventions · SAEs · counterfactuals</strong>
@@ -14,10 +14,11 @@
 </p>
 
 <p align="center" style="color: #cccccc">
-    <a href="LICENSE.md"><img height="20px" src="https://img.shields.io/badge/license-Apache%202.0-yellow" alt="Apache 2.0"></a>
-    <a href="mailto:mueller@technion.ac.il"><img height="20px" src="https://img.shields.io/badge/contact-blue.svg?logo=data:image/svg%2bxml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgaWQ9IlNWR1JlcG9fYmdDYXJyaWVyIiBzdHJva2Utd2lkdGg9IjAiPjwvZz48ZyBpZD0iU1ZHUmVwb190cmFjZXJDYXJyaWVyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjwvZz48ZyBpZD0iU1ZHUmVwb19pY29uQ2FycmllciI+IDxwYXRoIGQ9Ik00IDcuMDAwMDVMMTAuMiAxMS42NUMxMS4yNjY3IDEyLjQ1IDEyLjczMzMgMTIuNDUgMTMuOCAxMS42NUwyMCA3IiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48L3BhdGg+IDxyZWN0IHg9IjMiIHk9IjUiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxNCIgcng9IjIiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiPjwvcmVjdD4gPC9nPjwvc3ZnPg==" alt="Email"></a>
-    <a href="TODO"><img height="20px" src="https://img.shields.io/badge/website-gray.svg" alt="website"></a>
-
+    <a href="LICENSE.md"><img height="20px" src="https://img.shields.io/badge/license-Apache%202.0-blue" alt="Apache 2.0"></a>
+    <a href="https://huggingface.co/mech-interp-bench"><img height="20px" src="https://img.shields.io/badge/data-purple.svg?logo=huggingface"></a>
+    <a href="https://huggingface.co/spaces/mech-interp-bench/leaderboard"><img height="20px" src="https://img.shields.io/badge/leaderboard-red.svg?logo=data:image/svg%2bxml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IS0tIFVwbG9hZGVkIHRvOiBTVkcgUmVwbywgd3d3LnN2Z3JlcG8uY29tLCBHZW5lcmF0b3I6IFNWRyBSZXBvIE1peGVyIFRvb2xzIC0tPgo8c3ZnIHdpZHRoPSI4MDBweCIgaGVpZ2h0PSI4MDBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMTUgMTlIOVYxMi41VjguNkM5IDguMjY4NjMgOS4yNjg2MyA4IDkuNiA4SDE0LjRDMTQuNzMxNCA4IDE1IDguMjY4NjMgMTUgOC42VjE0LjVWMTlaIiBzdHJva2U9IiNmNWY1ZjUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggZD0iTTE1IDVIOSIgc3Ryb2tlPSIjZjVmNWY1IiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik0yMC40IDE5SDE1VjE1LjFDMTUgMTQuNzY4NiAxNS4yNjg2IDE0LjUgMTUuNiAxNC41SDIwLjRDMjAuNzMxNCAxNC41IDIxIDE0Ljc2ODYgMjEgMTUuMVYxOC40QzIxIDE4LjczMTQgMjAuNzMxNCAxOSAyMC40IDE5WiIgc3Ryb2tlPSIjZjVmNWY1IiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik05IDE5VjEzLjFDOSAxMi43Njg2IDguNzMxMzcgMTIuNSA4LjQgMTIuNUgzLjZDMy4yNjg2MyAxMi41IDMgMTIuNzY4NiAzIDEzLjFWMTguNEMzIDE4LjczMTQgMy4yNjg2MyAxOSAzLjYgMTlIOVoiIHN0cm9rZT0iI2Y1ZjVmNSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4="></a>
+    <a href="mailto:mueller@technion.ac.il"><img height="20px" src="https://img.shields.io/badge/contact-gray.svg?logo=data:image/svg%2bxml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgaWQ9IlNWR1JlcG9fYmdDYXJyaWVyIiBzdHJva2Utd2lkdGg9IjAiPjwvZz48ZyBpZD0iU1ZHUmVwb190cmFjZXJDYXJyaWVyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjwvZz48ZyBpZD0iU1ZHUmVwb19pY29uQ2FycmllciI+IDxwYXRoIGQ9Ik00IDcuMDAwMDVMMTAuMiAxMS42NUMxMS4yNjY3IDEyLjQ1IDEyLjczMzMgMTIuNDUgMTMuOCAxMS42NUwyMCA3IiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48L3BhdGg+IDxyZWN0IHg9IjMiIHk9IjUiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxNCIgcng9IjIiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiPjwvcmVjdD4gPC9nPjwvc3ZnPg==" alt="Email"></a>
+    <a href="TODO"><img height="20px" src="https://img.shields.io/badge/website-black.svg" alt="website"></a>
 </p>
 
 - [About MIB](#overview)
