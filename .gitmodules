@@ -1,0 +1,3 @@
+[submodule "CausalAbstraction"]
+	path = CausalAbstraction
+	url = https://github.com/atticusg/CausalAbstraction
