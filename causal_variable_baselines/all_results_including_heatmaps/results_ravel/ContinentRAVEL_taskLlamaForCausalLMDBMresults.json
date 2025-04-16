@@ -7,203 +7,203 @@
     "attribute_test": {
       "model_unit": {
         "[id='ResidualStream(Layer:0,Token:last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.75,
           "metadata": {
             "layer": 0,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:0,Token:entity_last_token)']": {
-          "accuracy": 0.25,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 0,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:1,Token:last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.75,
           "metadata": {
             "layer": 1,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:1,Token:entity_last_token)']": {
-          "accuracy": 0.9375,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 1,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:2,Token:last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.75,
           "metadata": {
             "layer": 2,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:2,Token:entity_last_token)']": {
-          "accuracy": 0.9375,
+          "accuracy": 0.75,
           "metadata": {
             "layer": 2,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:3,Token:last_token)']": {
-          "accuracy": 0.0,
+          "accuracy": 0.75,
           "metadata": {
             "layer": 3,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:3,Token:entity_last_token)']": {
-          "accuracy": 0.9375,
+          "accuracy": 0.875,
           "metadata": {
             "layer": 3,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:4,Token:last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.8125,
           "metadata": {
             "layer": 4,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:4,Token:entity_last_token)']": {
-          "accuracy": 0.9375,
+          "accuracy": 0.8125,
           "metadata": {
             "layer": 4,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:5,Token:last_token)']": {
-          "accuracy": 0.125,
+          "accuracy": 0.8125,
           "metadata": {
             "layer": 5,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:5,Token:entity_last_token)']": {
-          "accuracy": 0.9375,
+          "accuracy": 0.75,
           "metadata": {
             "layer": 5,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:6,Token:last_token)']": {
-          "accuracy": 0.125,
+          "accuracy": 0.8125,
           "metadata": {
             "layer": 6,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:6,Token:entity_last_token)']": {
-          "accuracy": 0.9375,
+          "accuracy": 0.75,
           "metadata": {
             "layer": 6,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:7,Token:last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.8125,
           "metadata": {
             "layer": 7,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:7,Token:entity_last_token)']": {
-          "accuracy": 0.9375,
+          "accuracy": 0.8125,
           "metadata": {
             "layer": 7,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:8,Token:last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.75,
           "metadata": {
             "layer": 8,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:8,Token:entity_last_token)']": {
-          "accuracy": 0.9375,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 8,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:9,Token:last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.8125,
           "metadata": {
             "layer": 9,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:9,Token:entity_last_token)']": {
-          "accuracy": 0.9375,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 9,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:10,Token:last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.8125,
           "metadata": {
             "layer": 10,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:10,Token:entity_last_token)']": {
-          "accuracy": 0.9375,
+          "accuracy": 0.75,
           "metadata": {
             "layer": 10,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:11,Token:last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.8125,
           "metadata": {
             "layer": 11,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:11,Token:entity_last_token)']": {
-          "accuracy": 0.9375,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 11,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:12,Token:last_token)']": {
-          "accuracy": 0.0625,
+          "accuracy": 0.8125,
           "metadata": {
             "layer": 12,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:12,Token:entity_last_token)']": {
-          "accuracy": 0.9375,
+          "accuracy": 0.75,
           "metadata": {
             "layer": 12,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:13,Token:last_token)']": {
-          "accuracy": 0.125,
+          "accuracy": 0.8125,
           "metadata": {
             "layer": 13,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:13,Token:entity_last_token)']": {
-          "accuracy": 0.9375,
+          "accuracy": 0.75,
           "metadata": {
             "layer": 13,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:14,Token:last_token)']": {
-          "accuracy": 0.25,
+          "accuracy": 0.8125,
           "metadata": {
             "layer": 14,
             "position": "last_token"
@@ -217,238 +217,238 @@
           }
         },
         "[id='ResidualStream(Layer:15,Token:last_token)']": {
-          "accuracy": 0.3125,
+          "accuracy": 0.875,
           "metadata": {
             "layer": 15,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:15,Token:entity_last_token)']": {
-          "accuracy": 0.75,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 15,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:16,Token:last_token)']": {
-          "accuracy": 0.375,
+          "accuracy": 0.875,
           "metadata": {
             "layer": 16,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:16,Token:entity_last_token)']": {
-          "accuracy": 0.5625,
+          "accuracy": 0.8125,
           "metadata": {
             "layer": 16,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:17,Token:last_token)']": {
-          "accuracy": 0.625,
+          "accuracy": 0.9375,
           "metadata": {
             "layer": 17,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:17,Token:entity_last_token)']": {
-          "accuracy": 0.25,
+          "accuracy": 0.75,
           "metadata": {
             "layer": 17,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:18,Token:last_token)']": {
-          "accuracy": 0.5625,
+          "accuracy": 0.9375,
           "metadata": {
             "layer": 18,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:18,Token:entity_last_token)']": {
-          "accuracy": 0.25,
+          "accuracy": 0.75,
           "metadata": {
             "layer": 18,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:19,Token:last_token)']": {
-          "accuracy": 0.6875,
+          "accuracy": 0.8125,
           "metadata": {
             "layer": 19,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:19,Token:entity_last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.75,
           "metadata": {
             "layer": 19,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:20,Token:last_token)']": {
-          "accuracy": 0.625,
+          "accuracy": 0.875,
           "metadata": {
             "layer": 20,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:20,Token:entity_last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.75,
           "metadata": {
             "layer": 20,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:21,Token:last_token)']": {
-          "accuracy": 0.5625,
+          "accuracy": 0.875,
           "metadata": {
             "layer": 21,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:21,Token:entity_last_token)']": {
-          "accuracy": 0.25,
+          "accuracy": 0.8125,
           "metadata": {
             "layer": 21,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:22,Token:last_token)']": {
-          "accuracy": 0.5,
+          "accuracy": 0.8125,
           "metadata": {
             "layer": 22,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:22,Token:entity_last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.8125,
           "metadata": {
             "layer": 22,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:23,Token:last_token)']": {
-          "accuracy": 0.375,
+          "accuracy": 0.8125,
           "metadata": {
             "layer": 23,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:23,Token:entity_last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.8125,
           "metadata": {
             "layer": 23,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:24,Token:last_token)']": {
-          "accuracy": 0.5625,
+          "accuracy": 0.8125,
           "metadata": {
             "layer": 24,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:24,Token:entity_last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.8125,
           "metadata": {
             "layer": 24,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:25,Token:last_token)']": {
-          "accuracy": 0.5625,
+          "accuracy": 0.9375,
           "metadata": {
             "layer": 25,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:25,Token:entity_last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.8125,
           "metadata": {
             "layer": 25,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:26,Token:last_token)']": {
-          "accuracy": 0.5,
+          "accuracy": 0.75,
           "metadata": {
             "layer": 26,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:26,Token:entity_last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.8125,
           "metadata": {
             "layer": 26,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:27,Token:last_token)']": {
-          "accuracy": 0.4375,
+          "accuracy": 0.9375,
           "metadata": {
             "layer": 27,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:27,Token:entity_last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.8125,
           "metadata": {
             "layer": 27,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:28,Token:last_token)']": {
-          "accuracy": 0.375,
+          "accuracy": 0.9375,
           "metadata": {
             "layer": 28,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:28,Token:entity_last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.8125,
           "metadata": {
             "layer": 28,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:29,Token:last_token)']": {
-          "accuracy": 0.4375,
+          "accuracy": 0.875,
           "metadata": {
             "layer": 29,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:29,Token:entity_last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.8125,
           "metadata": {
             "layer": 29,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:30,Token:last_token)']": {
-          "accuracy": 0.5625,
+          "accuracy": 0.875,
           "metadata": {
             "layer": 30,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:30,Token:entity_last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.8125,
           "metadata": {
             "layer": 30,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:31,Token:last_token)']": {
-          "accuracy": 0.625,
+          "accuracy": 0.75,
           "metadata": {
             "layer": 31,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:31,Token:entity_last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.8125,
           "metadata": {
             "layer": 31,
             "position": "entity_last_token"
@@ -459,182 +459,182 @@
     "wikipedia_test": {
       "model_unit": {
         "[id='ResidualStream(Layer:0,Token:last_token)']": {
-          "accuracy": 0.125,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 0,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:0,Token:entity_last_token)']": {
-          "accuracy": 0.375,
+          "accuracy": 0.1875,
           "metadata": {
             "layer": 0,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:1,Token:last_token)']": {
-          "accuracy": 0.0,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 1,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:1,Token:entity_last_token)']": {
-          "accuracy": 0.75,
+          "accuracy": 0.3125,
           "metadata": {
             "layer": 1,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:2,Token:last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.4375,
           "metadata": {
             "layer": 2,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:2,Token:entity_last_token)']": {
-          "accuracy": 0.8125,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 2,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:3,Token:last_token)']": {
-          "accuracy": 0.25,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 3,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:3,Token:entity_last_token)']": {
-          "accuracy": 0.8125,
+          "accuracy": 0.4375,
           "metadata": {
             "layer": 3,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:4,Token:last_token)']": {
-          "accuracy": 0.0625,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 4,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:4,Token:entity_last_token)']": {
-          "accuracy": 0.8125,
+          "accuracy": 0.5625,
           "metadata": {
             "layer": 4,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:5,Token:last_token)']": {
-          "accuracy": 0.0625,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 5,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:5,Token:entity_last_token)']": {
-          "accuracy": 0.8125,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 5,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:6,Token:last_token)']": {
-          "accuracy": 0.0625,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 6,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:6,Token:entity_last_token)']": {
-          "accuracy": 0.8125,
+          "accuracy": 0.4375,
           "metadata": {
             "layer": 6,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:7,Token:last_token)']": {
-          "accuracy": 0.125,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 7,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:7,Token:entity_last_token)']": {
-          "accuracy": 0.8125,
+          "accuracy": 0.5625,
           "metadata": {
             "layer": 7,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:8,Token:last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 8,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:8,Token:entity_last_token)']": {
-          "accuracy": 0.8125,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 8,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:9,Token:last_token)']": {
-          "accuracy": 0.125,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 9,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:9,Token:entity_last_token)']": {
-          "accuracy": 0.8125,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 9,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:10,Token:last_token)']": {
-          "accuracy": 0.25,
+          "accuracy": 0.4375,
           "metadata": {
             "layer": 10,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:10,Token:entity_last_token)']": {
-          "accuracy": 0.8125,
+          "accuracy": 0.625,
           "metadata": {
             "layer": 10,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:11,Token:last_token)']": {
-          "accuracy": 0.25,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 11,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:11,Token:entity_last_token)']": {
-          "accuracy": 0.8125,
+          "accuracy": 0.4375,
           "metadata": {
             "layer": 11,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:12,Token:last_token)']": {
-          "accuracy": 0.3125,
+          "accuracy": 0.4375,
           "metadata": {
             "layer": 12,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:12,Token:entity_last_token)']": {
-          "accuracy": 0.8125,
+          "accuracy": 0.5625,
           "metadata": {
             "layer": 12,
             "position": "entity_last_token"
@@ -648,14 +648,14 @@
           }
         },
         "[id='ResidualStream(Layer:13,Token:entity_last_token)']": {
-          "accuracy": 0.8125,
+          "accuracy": 0.5625,
           "metadata": {
             "layer": 13,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:14,Token:last_token)']": {
-          "accuracy": 0.3125,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 14,
             "position": "last_token"
@@ -676,7 +676,7 @@
           }
         },
         "[id='ResidualStream(Layer:15,Token:entity_last_token)']": {
-          "accuracy": 0.4375,
+          "accuracy": 0.5625,
           "metadata": {
             "layer": 15,
             "position": "entity_last_token"
@@ -690,35 +690,35 @@
           }
         },
         "[id='ResidualStream(Layer:16,Token:entity_last_token)']": {
-          "accuracy": 0.375,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 16,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:17,Token:last_token)']": {
-          "accuracy": 0.3125,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 17,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:17,Token:entity_last_token)']": {
-          "accuracy": 0.25,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 17,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:18,Token:last_token)']": {
-          "accuracy": 0.3125,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 18,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:18,Token:entity_last_token)']": {
-          "accuracy": 0.25,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 18,
             "position": "entity_last_token"
@@ -732,35 +732,35 @@
           }
         },
         "[id='ResidualStream(Layer:19,Token:entity_last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 19,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:20,Token:last_token)']": {
-          "accuracy": 0.3125,
+          "accuracy": 0.25,
           "metadata": {
             "layer": 20,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:20,Token:entity_last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 20,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:21,Token:last_token)']": {
-          "accuracy": 0.25,
+          "accuracy": 0.3125,
           "metadata": {
             "layer": 21,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:21,Token:entity_last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 21,
             "position": "entity_last_token"
@@ -774,7 +774,7 @@
           }
         },
         "[id='ResidualStream(Layer:22,Token:entity_last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 22,
             "position": "entity_last_token"
@@ -788,63 +788,63 @@
           }
         },
         "[id='ResidualStream(Layer:23,Token:entity_last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 23,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:24,Token:last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 24,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:24,Token:entity_last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 24,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:25,Token:last_token)']": {
-          "accuracy": 0.25,
+          "accuracy": 0.3125,
           "metadata": {
             "layer": 25,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:25,Token:entity_last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 25,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:26,Token:last_token)']": {
-          "accuracy": 0.25,
+          "accuracy": 0.3125,
           "metadata": {
             "layer": 26,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:26,Token:entity_last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 26,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:27,Token:last_token)']": {
-          "accuracy": 0.375,
+          "accuracy": 0.25,
           "metadata": {
             "layer": 27,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:27,Token:entity_last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 27,
             "position": "entity_last_token"
@@ -858,7 +858,7 @@
           }
         },
         "[id='ResidualStream(Layer:28,Token:entity_last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 28,
             "position": "entity_last_token"
@@ -872,7 +872,7 @@
           }
         },
         "[id='ResidualStream(Layer:29,Token:entity_last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 29,
             "position": "entity_last_token"
@@ -886,7 +886,7 @@
           }
         },
         "[id='ResidualStream(Layer:30,Token:entity_last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 30,
             "position": "entity_last_token"
@@ -900,7 +900,7 @@
           }
         },
         "[id='ResidualStream(Layer:31,Token:entity_last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 31,
             "position": "entity_last_token"
@@ -911,98 +911,98 @@
     "attribute_testprivate": {
       "model_unit": {
         "[id='ResidualStream(Layer:0,Token:last_token)']": {
-          "accuracy": 0.375,
+          "accuracy": 0.5625,
           "metadata": {
             "layer": 0,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:0,Token:entity_last_token)']": {
-          "accuracy": 0.5625,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 0,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:1,Token:last_token)']": {
-          "accuracy": 0.4375,
+          "accuracy": 0.625,
           "metadata": {
             "layer": 1,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:1,Token:entity_last_token)']": {
-          "accuracy": 1.0,
+          "accuracy": 0.4375,
           "metadata": {
             "layer": 1,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:2,Token:last_token)']": {
-          "accuracy": 0.375,
+          "accuracy": 0.625,
           "metadata": {
             "layer": 2,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:2,Token:entity_last_token)']": {
-          "accuracy": 1.0,
+          "accuracy": 0.625,
           "metadata": {
             "layer": 2,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:3,Token:last_token)']": {
-          "accuracy": 0.5,
+          "accuracy": 0.625,
           "metadata": {
             "layer": 3,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:3,Token:entity_last_token)']": {
-          "accuracy": 1.0,
+          "accuracy": 0.625,
           "metadata": {
             "layer": 3,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:4,Token:last_token)']": {
-          "accuracy": 0.4375,
+          "accuracy": 0.625,
           "metadata": {
             "layer": 4,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:4,Token:entity_last_token)']": {
-          "accuracy": 1.0,
+          "accuracy": 0.5625,
           "metadata": {
             "layer": 4,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:5,Token:last_token)']": {
-          "accuracy": 0.5625,
+          "accuracy": 0.625,
           "metadata": {
             "layer": 5,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:5,Token:entity_last_token)']": {
-          "accuracy": 1.0,
+          "accuracy": 0.625,
           "metadata": {
             "layer": 5,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:6,Token:last_token)']": {
-          "accuracy": 0.5625,
+          "accuracy": 0.625,
           "metadata": {
             "layer": 6,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:6,Token:entity_last_token)']": {
-          "accuracy": 0.9375,
+          "accuracy": 0.5625,
           "metadata": {
             "layer": 6,
             "position": "entity_last_token"
@@ -1016,21 +1016,21 @@
           }
         },
         "[id='ResidualStream(Layer:7,Token:entity_last_token)']": {
-          "accuracy": 0.9375,
+          "accuracy": 0.625,
           "metadata": {
             "layer": 7,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:8,Token:last_token)']": {
-          "accuracy": 0.5625,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 8,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:8,Token:entity_last_token)']": {
-          "accuracy": 0.9375,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 8,
             "position": "entity_last_token"
@@ -1044,315 +1044,315 @@
           }
         },
         "[id='ResidualStream(Layer:9,Token:entity_last_token)']": {
-          "accuracy": 0.9375,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 9,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:10,Token:last_token)']": {
-          "accuracy": 0.625,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 10,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:10,Token:entity_last_token)']": {
-          "accuracy": 0.9375,
+          "accuracy": 0.5625,
           "metadata": {
             "layer": 10,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:11,Token:last_token)']": {
-          "accuracy": 0.5625,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 11,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:11,Token:entity_last_token)']": {
-          "accuracy": 0.9375,
+          "accuracy": 0.625,
           "metadata": {
             "layer": 11,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:12,Token:last_token)']": {
-          "accuracy": 0.5,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 12,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:12,Token:entity_last_token)']": {
-          "accuracy": 0.9375,
+          "accuracy": 0.625,
           "metadata": {
             "layer": 12,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:13,Token:last_token)']": {
-          "accuracy": 0.5625,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 13,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:13,Token:entity_last_token)']": {
-          "accuracy": 0.9375,
+          "accuracy": 0.625,
           "metadata": {
             "layer": 13,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:14,Token:last_token)']": {
-          "accuracy": 0.625,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 14,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:14,Token:entity_last_token)']": {
-          "accuracy": 0.9375,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 14,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:15,Token:last_token)']": {
-          "accuracy": 0.625,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 15,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:15,Token:entity_last_token)']": {
-          "accuracy": 0.9375,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 15,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:16,Token:last_token)']": {
-          "accuracy": 0.8125,
+          "accuracy": 0.75,
           "metadata": {
             "layer": 16,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:16,Token:entity_last_token)']": {
-          "accuracy": 0.875,
+          "accuracy": 0.75,
           "metadata": {
             "layer": 16,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:17,Token:last_token)']": {
-          "accuracy": 0.9375,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 17,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:17,Token:entity_last_token)']": {
-          "accuracy": 0.5625,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 17,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:18,Token:last_token)']": {
-          "accuracy": 0.9375,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 18,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:18,Token:entity_last_token)']": {
-          "accuracy": 0.5625,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 18,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:19,Token:last_token)']": {
-          "accuracy": 1.0,
+          "accuracy": 0.5625,
           "metadata": {
             "layer": 19,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:19,Token:entity_last_token)']": {
-          "accuracy": 0.5625,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 19,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:20,Token:last_token)']": {
-          "accuracy": 1.0,
+          "accuracy": 0.625,
           "metadata": {
             "layer": 20,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:20,Token:entity_last_token)']": {
-          "accuracy": 0.625,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 20,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:21,Token:last_token)']": {
-          "accuracy": 0.875,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 21,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:21,Token:entity_last_token)']": {
-          "accuracy": 0.625,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 21,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:22,Token:last_token)']": {
-          "accuracy": 0.875,
+          "accuracy": 0.5625,
           "metadata": {
             "layer": 22,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:22,Token:entity_last_token)']": {
-          "accuracy": 0.5625,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 22,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:23,Token:last_token)']": {
-          "accuracy": 0.75,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 23,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:23,Token:entity_last_token)']": {
-          "accuracy": 0.5625,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 23,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:24,Token:last_token)']": {
-          "accuracy": 0.875,
+          "accuracy": 0.625,
           "metadata": {
             "layer": 24,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:24,Token:entity_last_token)']": {
-          "accuracy": 0.5625,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 24,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:25,Token:last_token)']": {
-          "accuracy": 0.6875,
+          "accuracy": 0.5625,
           "metadata": {
             "layer": 25,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:25,Token:entity_last_token)']": {
-          "accuracy": 0.5625,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 25,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:26,Token:last_token)']": {
-          "accuracy": 0.6875,
+          "accuracy": 0.625,
           "metadata": {
             "layer": 26,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:26,Token:entity_last_token)']": {
-          "accuracy": 0.5625,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 26,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:27,Token:last_token)']": {
-          "accuracy": 0.75,
+          "accuracy": 0.5625,
           "metadata": {
             "layer": 27,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:27,Token:entity_last_token)']": {
-          "accuracy": 0.5625,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 27,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:28,Token:last_token)']": {
-          "accuracy": 0.75,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 28,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:28,Token:entity_last_token)']": {
-          "accuracy": 0.5625,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 28,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:29,Token:last_token)']": {
-          "accuracy": 0.75,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 29,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:29,Token:entity_last_token)']": {
-          "accuracy": 0.5625,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 29,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:30,Token:last_token)']": {
-          "accuracy": 0.9375,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 30,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:30,Token:entity_last_token)']": {
-          "accuracy": 0.5625,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 30,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:31,Token:last_token)']": {
-          "accuracy": 0.75,
+          "accuracy": 0.4375,
           "metadata": {
             "layer": 31,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:31,Token:entity_last_token)']": {
-          "accuracy": 0.5625,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 31,
             "position": "entity_last_token"
@@ -1363,70 +1363,70 @@
     "wikipedia_testprivate": {
       "model_unit": {
         "[id='ResidualStream(Layer:0,Token:last_token)']": {
-          "accuracy": 0.0625,
+          "accuracy": 0.1875,
           "metadata": {
             "layer": 0,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:0,Token:entity_last_token)']": {
-          "accuracy": 0.5,
+          "accuracy": 0.1875,
           "metadata": {
             "layer": 0,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:1,Token:last_token)']": {
-          "accuracy": 0.125,
+          "accuracy": 0.25,
           "metadata": {
             "layer": 1,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:1,Token:entity_last_token)']": {
-          "accuracy": 0.6875,
+          "accuracy": 0.3125,
           "metadata": {
             "layer": 1,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:2,Token:last_token)']": {
-          "accuracy": 0.0625,
+          "accuracy": 0.25,
           "metadata": {
             "layer": 2,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:2,Token:entity_last_token)']": {
-          "accuracy": 0.75,
+          "accuracy": 0.3125,
           "metadata": {
             "layer": 2,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:3,Token:last_token)']": {
-          "accuracy": 0.125,
+          "accuracy": 0.25,
           "metadata": {
             "layer": 3,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:3,Token:entity_last_token)']": {
-          "accuracy": 0.75,
+          "accuracy": 0.3125,
           "metadata": {
             "layer": 3,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:4,Token:last_token)']": {
-          "accuracy": 0.125,
+          "accuracy": 0.25,
           "metadata": {
             "layer": 4,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:4,Token:entity_last_token)']": {
-          "accuracy": 0.6875,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 4,
             "position": "entity_last_token"
@@ -1440,21 +1440,21 @@
           }
         },
         "[id='ResidualStream(Layer:5,Token:entity_last_token)']": {
-          "accuracy": 0.6875,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 5,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:6,Token:last_token)']": {
-          "accuracy": 0.3125,
+          "accuracy": 0.25,
           "metadata": {
             "layer": 6,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:6,Token:entity_last_token)']": {
-          "accuracy": 0.6875,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 6,
             "position": "entity_last_token"
@@ -1468,7 +1468,7 @@
           }
         },
         "[id='ResidualStream(Layer:7,Token:entity_last_token)']": {
-          "accuracy": 0.625,
+          "accuracy": 0.5625,
           "metadata": {
             "layer": 7,
             "position": "entity_last_token"
@@ -1482,28 +1482,28 @@
           }
         },
         "[id='ResidualStream(Layer:8,Token:entity_last_token)']": {
-          "accuracy": 0.625,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 8,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:9,Token:last_token)']": {
-          "accuracy": 0.25,
+          "accuracy": 0.3125,
           "metadata": {
             "layer": 9,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:9,Token:entity_last_token)']": {
-          "accuracy": 0.625,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 9,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:10,Token:last_token)']": {
-          "accuracy": 0.25,
+          "accuracy": 0.3125,
           "metadata": {
             "layer": 10,
             "position": "last_token"
@@ -1517,294 +1517,294 @@
           }
         },
         "[id='ResidualStream(Layer:11,Token:last_token)']": {
-          "accuracy": 0.25,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 11,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:11,Token:entity_last_token)']": {
-          "accuracy": 0.625,
+          "accuracy": 0.5625,
           "metadata": {
             "layer": 11,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:12,Token:last_token)']": {
-          "accuracy": 0.3125,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 12,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:12,Token:entity_last_token)']": {
-          "accuracy": 0.625,
+          "accuracy": 0.6875,
           "metadata": {
             "layer": 12,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:13,Token:last_token)']": {
-          "accuracy": 0.3125,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 13,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:13,Token:entity_last_token)']": {
-          "accuracy": 0.5625,
+          "accuracy": 0.625,
           "metadata": {
             "layer": 13,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:14,Token:last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 14,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:14,Token:entity_last_token)']": {
-          "accuracy": 0.625,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 14,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:15,Token:last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.3125,
           "metadata": {
             "layer": 15,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:15,Token:entity_last_token)']": {
-          "accuracy": 0.5625,
+          "accuracy": 0.5,
           "metadata": {
             "layer": 15,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:16,Token:last_token)']": {
-          "accuracy": 0.25,
+          "accuracy": 0.3125,
           "metadata": {
             "layer": 16,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:16,Token:entity_last_token)']": {
-          "accuracy": 0.625,
+          "accuracy": 0.4375,
           "metadata": {
             "layer": 16,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:17,Token:last_token)']": {
-          "accuracy": 0.25,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 17,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:17,Token:entity_last_token)']": {
-          "accuracy": 0.3125,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 17,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:18,Token:last_token)']": {
-          "accuracy": 0.25,
+          "accuracy": 0.3125,
           "metadata": {
             "layer": 18,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:18,Token:entity_last_token)']": {
-          "accuracy": 0.3125,
+          "accuracy": 0.4375,
           "metadata": {
             "layer": 18,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:19,Token:last_token)']": {
-          "accuracy": 0.25,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 19,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:19,Token:entity_last_token)']": {
-          "accuracy": 0.3125,
+          "accuracy": 0.4375,
           "metadata": {
             "layer": 19,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:20,Token:last_token)']": {
-          "accuracy": 0.25,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 20,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:20,Token:entity_last_token)']": {
-          "accuracy": 0.3125,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 20,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:21,Token:last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.4375,
           "metadata": {
             "layer": 21,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:21,Token:entity_last_token)']": {
-          "accuracy": 0.3125,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 21,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:22,Token:last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.3125,
           "metadata": {
             "layer": 22,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:22,Token:entity_last_token)']": {
-          "accuracy": 0.3125,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 22,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:23,Token:last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 23,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:23,Token:entity_last_token)']": {
-          "accuracy": 0.3125,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 23,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:24,Token:last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.4375,
           "metadata": {
             "layer": 24,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:24,Token:entity_last_token)']": {
-          "accuracy": 0.25,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 24,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:25,Token:last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.4375,
           "metadata": {
             "layer": 25,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:25,Token:entity_last_token)']": {
-          "accuracy": 0.25,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 25,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:26,Token:last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.4375,
           "metadata": {
             "layer": 26,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:26,Token:entity_last_token)']": {
-          "accuracy": 0.25,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 26,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:27,Token:last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.4375,
           "metadata": {
             "layer": 27,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:27,Token:entity_last_token)']": {
-          "accuracy": 0.25,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 27,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:28,Token:last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 28,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:28,Token:entity_last_token)']": {
-          "accuracy": 0.25,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 28,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:29,Token:last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 29,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:29,Token:entity_last_token)']": {
-          "accuracy": 0.25,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 29,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:30,Token:last_token)']": {
-          "accuracy": 0.125,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 30,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:30,Token:entity_last_token)']": {
-          "accuracy": 0.25,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 30,
             "position": "entity_last_token"
           }
         },
         "[id='ResidualStream(Layer:31,Token:last_token)']": {
-          "accuracy": 0.1875,
+          "accuracy": 0.4375,
           "metadata": {
             "layer": 31,
             "position": "last_token"
           }
         },
         "[id='ResidualStream(Layer:31,Token:entity_last_token)']": {
-          "accuracy": 0.25,
+          "accuracy": 0.375,
           "metadata": {
             "layer": 31,
             "position": "entity_last_token"
