@@ -1,0 +1,74 @@
+{
+  "method_name": "full_vector",
+  "model_name": "GPT2LMHeadModel",
+  "task_name": "ioi_task",
+  "target_variables": "output_token",
+  "dataset": {
+    "s1_io_flip_test": {
+      "model_unit": {
+        "[id='AttentionHead(Layer:7,Token:all)']": {
+          "accuracy": 2.4381436249840958,
+          "metadata": {
+            "layer": 7,
+            "position": "all"
+          }
+        }
+      }
+    },
+    "s2_io_flip_test": {
+      "model_unit": {
+        "[id='AttentionHead(Layer:7,Token:all)']": {
+          "accuracy": 1.6764052419468953,
+          "metadata": {
+            "layer": 7,
+            "position": "all"
+          }
+        }
+      }
+    },
+    "s1_ioi_flip_s2_ioi_flip_test": {
+      "model_unit": {
+        "[id='AttentionHead(Layer:7,Token:all)']": {
+          "accuracy": 3.7555212506404203,
+          "metadata": {
+            "layer": 7,
+            "position": "all"
+          }
+        }
+      }
+    },
+    "s1_io_flip_testprivate": {
+      "model_unit": {
+        "[id='AttentionHead(Layer:7,Token:all)']": {
+          "accuracy": 3.372450925893454,
+          "metadata": {
+            "layer": 7,
+            "position": "all"
+          }
+        }
+      }
+    },
+    "s2_io_flip_testprivate": {
+      "model_unit": {
+        "[id='AttentionHead(Layer:7,Token:all)']": {
+          "accuracy": 3.0469115891830327,
+          "metadata": {
+            "layer": 7,
+            "position": "all"
+          }
+        }
+      }
+    },
+    "s1_ioi_flip_s2_ioi_flip_testprivate": {
+      "model_unit": {
+        "[id='AttentionHead(Layer:7,Token:all)']": {
+          "accuracy": 10.739528309127849,
+          "metadata": {
+            "layer": 7,
+            "position": "all"
+          }
+        }
+      }
+    }
+  }
+}
