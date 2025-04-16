@@ -1,8 +1,8 @@
 
-from tasks.ARC.ARC import get_token_positions, get_task
+from ..CausalAbstraction.tasks.ARC.ARC import get_token_positions, get_task
 import gc, torch
-from pipeline import LMPipeline
-from experiments.aggregate_experiments import residual_stream_baselines
+from ..CausalAbstraction.pipeline import LMPipeline
+from ..CausalAbstraction.experiments.aggregate_experiments import residual_stream_baselines
 
 if __name__ == "__main__":
     import argparse

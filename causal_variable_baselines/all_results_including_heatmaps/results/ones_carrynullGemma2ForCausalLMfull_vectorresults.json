@@ -1,0 +1,1480 @@
+{
+  "method_name": "full_vector",
+  "model_name": "Gemma2ForCausalLM",
+  "task_name": "null",
+  "target_variables": "ones_carry",
+  "dataset": {
+    "random_test": {
+      "model_unit": {
+        "[id='ResidualStream(Layer:0,Token:op2_last)']": {
+          "accuracy": 0.5235668789808917,
+          "metadata": {
+            "layer": 0,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:0,Token:last)']": {
+          "accuracy": 0.489171974522293,
+          "metadata": {
+            "layer": 0,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:1,Token:op2_last)']": {
+          "accuracy": 0.5225053078556263,
+          "metadata": {
+            "layer": 1,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:1,Token:last)']": {
+          "accuracy": 0.489171974522293,
+          "metadata": {
+            "layer": 1,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:2,Token:op2_last)']": {
+          "accuracy": 0.46794055201698515,
+          "metadata": {
+            "layer": 2,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:2,Token:last)']": {
+          "accuracy": 0.489171974522293,
+          "metadata": {
+            "layer": 2,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:3,Token:op2_last)']": {
+          "accuracy": 0.4636942675159236,
+          "metadata": {
+            "layer": 3,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:3,Token:last)']": {
+          "accuracy": 0.489171974522293,
+          "metadata": {
+            "layer": 3,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:4,Token:op2_last)']": {
+          "accuracy": 0.46475583864118897,
+          "metadata": {
+            "layer": 4,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:4,Token:last)']": {
+          "accuracy": 0.489171974522293,
+          "metadata": {
+            "layer": 4,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:5,Token:op2_last)']": {
+          "accuracy": 0.459447983014862,
+          "metadata": {
+            "layer": 5,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:5,Token:last)']": {
+          "accuracy": 0.489171974522293,
+          "metadata": {
+            "layer": 5,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:6,Token:op2_last)']": {
+          "accuracy": 0.44734607218683653,
+          "metadata": {
+            "layer": 6,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:6,Token:last)']": {
+          "accuracy": 0.489171974522293,
+          "metadata": {
+            "layer": 6,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:7,Token:op2_last)']": {
+          "accuracy": 0.4418259023354565,
+          "metadata": {
+            "layer": 7,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:7,Token:last)']": {
+          "accuracy": 0.489171974522293,
+          "metadata": {
+            "layer": 7,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:8,Token:op2_last)']": {
+          "accuracy": 0.440552016985138,
+          "metadata": {
+            "layer": 8,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:8,Token:last)']": {
+          "accuracy": 0.489171974522293,
+          "metadata": {
+            "layer": 8,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:9,Token:op2_last)']": {
+          "accuracy": 0.4346072186836518,
+          "metadata": {
+            "layer": 9,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:9,Token:last)']": {
+          "accuracy": 0.489171974522293,
+          "metadata": {
+            "layer": 9,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:10,Token:op2_last)']": {
+          "accuracy": 0.4299363057324841,
+          "metadata": {
+            "layer": 10,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:10,Token:last)']": {
+          "accuracy": 0.489171974522293,
+          "metadata": {
+            "layer": 10,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:11,Token:op2_last)']": {
+          "accuracy": 0.4278131634819533,
+          "metadata": {
+            "layer": 11,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:11,Token:last)']": {
+          "accuracy": 0.489171974522293,
+          "metadata": {
+            "layer": 11,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:12,Token:op2_last)']": {
+          "accuracy": 0.426963906581741,
+          "metadata": {
+            "layer": 12,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:12,Token:last)']": {
+          "accuracy": 0.489171974522293,
+          "metadata": {
+            "layer": 12,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:13,Token:op2_last)']": {
+          "accuracy": 0.49936305732484076,
+          "metadata": {
+            "layer": 13,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:13,Token:last)']": {
+          "accuracy": 0.4804670912951168,
+          "metadata": {
+            "layer": 13,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:14,Token:op2_last)']": {
+          "accuracy": 0.5110403397027601,
+          "metadata": {
+            "layer": 14,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:14,Token:last)']": {
+          "accuracy": 0.45307855626326965,
+          "metadata": {
+            "layer": 14,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:15,Token:op2_last)']": {
+          "accuracy": 0.5140127388535032,
+          "metadata": {
+            "layer": 15,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:15,Token:last)']": {
+          "accuracy": 0.4031847133757962,
+          "metadata": {
+            "layer": 15,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:16,Token:op2_last)']": {
+          "accuracy": 0.4923566878980892,
+          "metadata": {
+            "layer": 16,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:16,Token:last)']": {
+          "accuracy": 0.3118895966029724,
+          "metadata": {
+            "layer": 16,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:17,Token:op2_last)']": {
+          "accuracy": 0.49044585987261147,
+          "metadata": {
+            "layer": 17,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:17,Token:last)']": {
+          "accuracy": 0.2772823779193206,
+          "metadata": {
+            "layer": 17,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:18,Token:op2_last)']": {
+          "accuracy": 0.49065817409766455,
+          "metadata": {
+            "layer": 18,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:18,Token:last)']": {
+          "accuracy": 0.19193205944798303,
+          "metadata": {
+            "layer": 18,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:19,Token:op2_last)']": {
+          "accuracy": 0.4893842887473461,
+          "metadata": {
+            "layer": 19,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:19,Token:last)']": {
+          "accuracy": 0.19150743099787687,
+          "metadata": {
+            "layer": 19,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:20,Token:op2_last)']": {
+          "accuracy": 0.489171974522293,
+          "metadata": {
+            "layer": 20,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:20,Token:last)']": {
+          "accuracy": 0.1912951167728238,
+          "metadata": {
+            "layer": 20,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:21,Token:op2_last)']": {
+          "accuracy": 0.489171974522293,
+          "metadata": {
+            "layer": 21,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:21,Token:last)']": {
+          "accuracy": 0.1912951167728238,
+          "metadata": {
+            "layer": 21,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:22,Token:op2_last)']": {
+          "accuracy": 0.489171974522293,
+          "metadata": {
+            "layer": 22,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:22,Token:last)']": {
+          "accuracy": 0.1912951167728238,
+          "metadata": {
+            "layer": 22,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:23,Token:op2_last)']": {
+          "accuracy": 0.489171974522293,
+          "metadata": {
+            "layer": 23,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:23,Token:last)']": {
+          "accuracy": 0.1912951167728238,
+          "metadata": {
+            "layer": 23,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:24,Token:op2_last)']": {
+          "accuracy": 0.489171974522293,
+          "metadata": {
+            "layer": 24,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:24,Token:last)']": {
+          "accuracy": 0.1912951167728238,
+          "metadata": {
+            "layer": 24,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:25,Token:op2_last)']": {
+          "accuracy": 0.489171974522293,
+          "metadata": {
+            "layer": 25,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:25,Token:last)']": {
+          "accuracy": 0.1912951167728238,
+          "metadata": {
+            "layer": 25,
+            "position": "last"
+          }
+        }
+      }
+    },
+    "ones_carry_test": {
+      "model_unit": {
+        "[id='ResidualStream(Layer:0,Token:op2_last)']": {
+          "accuracy": 0.19534200587494754,
+          "metadata": {
+            "layer": 0,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:0,Token:last)']": {
+          "accuracy": 0.0,
+          "metadata": {
+            "layer": 0,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:1,Token:op2_last)']": {
+          "accuracy": 0.19345362987830467,
+          "metadata": {
+            "layer": 1,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:1,Token:last)']": {
+          "accuracy": 0.0,
+          "metadata": {
+            "layer": 1,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:2,Token:op2_last)']": {
+          "accuracy": 0.19345362987830467,
+          "metadata": {
+            "layer": 2,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:2,Token:last)']": {
+          "accuracy": 0.0,
+          "metadata": {
+            "layer": 2,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:3,Token:op2_last)']": {
+          "accuracy": 0.19450272765421736,
+          "metadata": {
+            "layer": 3,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:3,Token:last)']": {
+          "accuracy": 0.0,
+          "metadata": {
+            "layer": 3,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:4,Token:op2_last)']": {
+          "accuracy": 0.19429290809903482,
+          "metadata": {
+            "layer": 4,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:4,Token:last)']": {
+          "accuracy": 0.0,
+          "metadata": {
+            "layer": 4,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:5,Token:op2_last)']": {
+          "accuracy": 0.19345362987830467,
+          "metadata": {
+            "layer": 5,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:5,Token:last)']": {
+          "accuracy": 0.0,
+          "metadata": {
+            "layer": 5,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:6,Token:op2_last)']": {
+          "accuracy": 0.19135543432647922,
+          "metadata": {
+            "layer": 6,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:6,Token:last)']": {
+          "accuracy": 0.0,
+          "metadata": {
+            "layer": 6,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:7,Token:op2_last)']": {
+          "accuracy": 0.1917750734368443,
+          "metadata": {
+            "layer": 7,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:7,Token:last)']": {
+          "accuracy": 0.0,
+          "metadata": {
+            "layer": 7,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:8,Token:op2_last)']": {
+          "accuracy": 0.19198489299202687,
+          "metadata": {
+            "layer": 8,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:8,Token:last)']": {
+          "accuracy": 0.0,
+          "metadata": {
+            "layer": 8,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:9,Token:op2_last)']": {
+          "accuracy": 0.1917750734368443,
+          "metadata": {
+            "layer": 9,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:9,Token:last)']": {
+          "accuracy": 0.0,
+          "metadata": {
+            "layer": 9,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:10,Token:op2_last)']": {
+          "accuracy": 0.19198489299202687,
+          "metadata": {
+            "layer": 10,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:10,Token:last)']": {
+          "accuracy": 0.0,
+          "metadata": {
+            "layer": 10,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:11,Token:op2_last)']": {
+          "accuracy": 0.19093579521611415,
+          "metadata": {
+            "layer": 11,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:11,Token:last)']": {
+          "accuracy": 0.0,
+          "metadata": {
+            "layer": 11,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:12,Token:op2_last)']": {
+          "accuracy": 0.19093579521611415,
+          "metadata": {
+            "layer": 12,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:12,Token:last)']": {
+          "accuracy": 0.0,
+          "metadata": {
+            "layer": 12,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:13,Token:op2_last)']": {
+          "accuracy": 0.18820814099874109,
+          "metadata": {
+            "layer": 13,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:13,Token:last)']": {
+          "accuracy": 0.003357112882920688,
+          "metadata": {
+            "layer": 13,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:14,Token:op2_last)']": {
+          "accuracy": 0.18191355434326478,
+          "metadata": {
+            "layer": 14,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:14,Token:last)']": {
+          "accuracy": 0.005035669324381032,
+          "metadata": {
+            "layer": 14,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:15,Token:op2_last)']": {
+          "accuracy": 0.17897608057070918,
+          "metadata": {
+            "layer": 15,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:15,Token:last)']": {
+          "accuracy": 0.009651699538396978,
+          "metadata": {
+            "layer": 15,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:16,Token:op2_last)']": {
+          "accuracy": 0.016365925304238357,
+          "metadata": {
+            "layer": 16,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:16,Token:last)']": {
+          "accuracy": 0.29143936214855226,
+          "metadata": {
+            "layer": 16,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:17,Token:op2_last)']": {
+          "accuracy": 0.004825849769198489,
+          "metadata": {
+            "layer": 17,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:17,Token:last)']": {
+          "accuracy": 0.2981535879143936,
+          "metadata": {
+            "layer": 17,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:18,Token:op2_last)']": {
+          "accuracy": 0.0035669324381032313,
+          "metadata": {
+            "layer": 18,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:18,Token:last)']": {
+          "accuracy": 0.3059169114561477,
+          "metadata": {
+            "layer": 18,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:19,Token:op2_last)']": {
+          "accuracy": 0.001258917331095258,
+          "metadata": {
+            "layer": 19,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:19,Token:last)']": {
+          "accuracy": 0.3059169114561477,
+          "metadata": {
+            "layer": 19,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:20,Token:op2_last)']": {
+          "accuracy": 0.0,
+          "metadata": {
+            "layer": 20,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:20,Token:last)']": {
+          "accuracy": 0.3059169114561477,
+          "metadata": {
+            "layer": 20,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:21,Token:op2_last)']": {
+          "accuracy": 0.0,
+          "metadata": {
+            "layer": 21,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:21,Token:last)']": {
+          "accuracy": 0.3059169114561477,
+          "metadata": {
+            "layer": 21,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:22,Token:op2_last)']": {
+          "accuracy": 0.0,
+          "metadata": {
+            "layer": 22,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:22,Token:last)']": {
+          "accuracy": 0.3059169114561477,
+          "metadata": {
+            "layer": 22,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:23,Token:op2_last)']": {
+          "accuracy": 0.0,
+          "metadata": {
+            "layer": 23,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:23,Token:last)']": {
+          "accuracy": 0.3059169114561477,
+          "metadata": {
+            "layer": 23,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:24,Token:op2_last)']": {
+          "accuracy": 0.0,
+          "metadata": {
+            "layer": 24,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:24,Token:last)']": {
+          "accuracy": 0.3059169114561477,
+          "metadata": {
+            "layer": 24,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:25,Token:op2_last)']": {
+          "accuracy": 0.0,
+          "metadata": {
+            "layer": 25,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:25,Token:last)']": {
+          "accuracy": 0.3059169114561477,
+          "metadata": {
+            "layer": 25,
+            "position": "last"
+          }
+        }
+      }
+    },
+    "random_testprivate": {
+      "model_unit": {
+        "[id='ResidualStream(Layer:0,Token:op2_last)']": {
+          "accuracy": 0.521351179094965,
+          "metadata": {
+            "layer": 0,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:0,Token:last)']": {
+          "accuracy": 0.4994688761419163,
+          "metadata": {
+            "layer": 0,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:1,Token:op2_last)']": {
+          "accuracy": 0.5202889313787975,
+          "metadata": {
+            "layer": 1,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:1,Token:last)']": {
+          "accuracy": 0.4996813256851498,
+          "metadata": {
+            "layer": 1,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:2,Token:op2_last)']": {
+          "accuracy": 0.4650520501380922,
+          "metadata": {
+            "layer": 2,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:2,Token:last)']": {
+          "accuracy": 0.4994688761419163,
+          "metadata": {
+            "layer": 2,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:3,Token:op2_last)']": {
+          "accuracy": 0.4616528574463565,
+          "metadata": {
+            "layer": 3,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:3,Token:last)']": {
+          "accuracy": 0.49904397705544934,
+          "metadata": {
+            "layer": 3,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:4,Token:op2_last)']": {
+          "accuracy": 0.46101550881665604,
+          "metadata": {
+            "layer": 4,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:4,Token:last)']": {
+          "accuracy": 0.4994688761419163,
+          "metadata": {
+            "layer": 4,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:5,Token:op2_last)']": {
+          "accuracy": 0.45549182069258554,
+          "metadata": {
+            "layer": 5,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:5,Token:last)']": {
+          "accuracy": 0.4994688761419163,
+          "metadata": {
+            "layer": 5,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:6,Token:op2_last)']": {
+          "accuracy": 0.44423199490121096,
+          "metadata": {
+            "layer": 6,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:6,Token:last)']": {
+          "accuracy": 0.4994688761419163,
+          "metadata": {
+            "layer": 6,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:7,Token:op2_last)']": {
+          "accuracy": 0.44189504992564266,
+          "metadata": {
+            "layer": 7,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:7,Token:last)']": {
+          "accuracy": 0.49904397705544934,
+          "metadata": {
+            "layer": 7,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:8,Token:op2_last)']": {
+          "accuracy": 0.4414701508391757,
+          "metadata": {
+            "layer": 8,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:8,Token:last)']": {
+          "accuracy": 0.4988315275122158,
+          "metadata": {
+            "layer": 8,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:9,Token:op2_last)']": {
+          "accuracy": 0.4359464627151052,
+          "metadata": {
+            "layer": 9,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:9,Token:last)']": {
+          "accuracy": 0.49904397705544934,
+          "metadata": {
+            "layer": 9,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:10,Token:op2_last)']": {
+          "accuracy": 0.4289356277884003,
+          "metadata": {
+            "layer": 10,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:10,Token:last)']": {
+          "accuracy": 0.49904397705544934,
+          "metadata": {
+            "layer": 10,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:11,Token:op2_last)']": {
+          "accuracy": 0.4246866369237306,
+          "metadata": {
+            "layer": 11,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:11,Token:last)']": {
+          "accuracy": 0.4992564265986828,
+          "metadata": {
+            "layer": 11,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:12,Token:op2_last)']": {
+          "accuracy": 0.4251115360101976,
+          "metadata": {
+            "layer": 12,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:12,Token:last)']": {
+          "accuracy": 0.4992564265986828,
+          "metadata": {
+            "layer": 12,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:13,Token:op2_last)']": {
+          "accuracy": 0.491395793499044,
+          "metadata": {
+            "layer": 13,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:13,Token:last)']": {
+          "accuracy": 0.4922455916719779,
+          "metadata": {
+            "layer": 13,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:14,Token:op2_last)']": {
+          "accuracy": 0.5060548119821542,
+          "metadata": {
+            "layer": 14,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:14,Token:last)']": {
+          "accuracy": 0.46186530698959,
+          "metadata": {
+            "layer": 14,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:15,Token:op2_last)']": {
+          "accuracy": 0.5066921606118547,
+          "metadata": {
+            "layer": 15,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:15,Token:last)']": {
+          "accuracy": 0.40429148077331634,
+          "metadata": {
+            "layer": 15,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:16,Token:op2_last)']": {
+          "accuracy": 0.49904397705544934,
+          "metadata": {
+            "layer": 16,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:16,Token:last)']": {
+          "accuracy": 0.308051837688549,
+          "metadata": {
+            "layer": 16,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:17,Token:op2_last)']": {
+          "accuracy": 0.4979817293392819,
+          "metadata": {
+            "layer": 17,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:17,Token:last)']": {
+          "accuracy": 0.27172296579562355,
+          "metadata": {
+            "layer": 17,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:18,Token:op2_last)']": {
+          "accuracy": 0.497131931166348,
+          "metadata": {
+            "layer": 18,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:18,Token:last)']": {
+          "accuracy": 0.18971744210749947,
+          "metadata": {
+            "layer": 18,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:19,Token:op2_last)']": {
+          "accuracy": 0.4992564265986828,
+          "metadata": {
+            "layer": 19,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:19,Token:last)']": {
+          "accuracy": 0.18908009347779903,
+          "metadata": {
+            "layer": 19,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:20,Token:op2_last)']": {
+          "accuracy": 0.4988315275122158,
+          "metadata": {
+            "layer": 20,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:20,Token:last)']": {
+          "accuracy": 0.18929254302103252,
+          "metadata": {
+            "layer": 20,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:21,Token:op2_last)']": {
+          "accuracy": 0.4992564265986828,
+          "metadata": {
+            "layer": 21,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:21,Token:last)']": {
+          "accuracy": 0.18929254302103252,
+          "metadata": {
+            "layer": 21,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:22,Token:op2_last)']": {
+          "accuracy": 0.4994688761419163,
+          "metadata": {
+            "layer": 22,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:22,Token:last)']": {
+          "accuracy": 0.18950499256426598,
+          "metadata": {
+            "layer": 22,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:23,Token:op2_last)']": {
+          "accuracy": 0.4994688761419163,
+          "metadata": {
+            "layer": 23,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:23,Token:last)']": {
+          "accuracy": 0.18929254302103252,
+          "metadata": {
+            "layer": 23,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:24,Token:op2_last)']": {
+          "accuracy": 0.4994688761419163,
+          "metadata": {
+            "layer": 24,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:24,Token:last)']": {
+          "accuracy": 0.18929254302103252,
+          "metadata": {
+            "layer": 24,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:25,Token:op2_last)']": {
+          "accuracy": 0.4994688761419163,
+          "metadata": {
+            "layer": 25,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:25,Token:last)']": {
+          "accuracy": 0.18908009347779903,
+          "metadata": {
+            "layer": 25,
+            "position": "last"
+          }
+        }
+      }
+    },
+    "ones_carry_testprivate": {
+      "model_unit": {
+        "[id='ResidualStream(Layer:0,Token:op2_last)']": {
+          "accuracy": 0.19886839899413244,
+          "metadata": {
+            "layer": 0,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:0,Token:last)']": {
+          "accuracy": 0.0,
+          "metadata": {
+            "layer": 0,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:1,Token:op2_last)']": {
+          "accuracy": 0.19886839899413244,
+          "metadata": {
+            "layer": 1,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:1,Token:last)']": {
+          "accuracy": 0.0,
+          "metadata": {
+            "layer": 1,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:2,Token:op2_last)']": {
+          "accuracy": 0.2001257334450964,
+          "metadata": {
+            "layer": 2,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:2,Token:last)']": {
+          "accuracy": 0.0,
+          "metadata": {
+            "layer": 2,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:3,Token:op2_last)']": {
+          "accuracy": 0.19907795473595977,
+          "metadata": {
+            "layer": 3,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:3,Token:last)']": {
+          "accuracy": 0.00041911148365465214,
+          "metadata": {
+            "layer": 3,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:4,Token:op2_last)']": {
+          "accuracy": 0.19865884325230512,
+          "metadata": {
+            "layer": 4,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:4,Token:last)']": {
+          "accuracy": 0.00041911148365465214,
+          "metadata": {
+            "layer": 4,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:5,Token:op2_last)']": {
+          "accuracy": 0.19677284157585917,
+          "metadata": {
+            "layer": 5,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:5,Token:last)']": {
+          "accuracy": 0.0,
+          "metadata": {
+            "layer": 5,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:6,Token:op2_last)']": {
+          "accuracy": 0.19761106454316849,
+          "metadata": {
+            "layer": 6,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:6,Token:last)']": {
+          "accuracy": 0.00041911148365465214,
+          "metadata": {
+            "layer": 6,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:7,Token:op2_last)']": {
+          "accuracy": 0.20054484492875105,
+          "metadata": {
+            "layer": 7,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:7,Token:last)']": {
+          "accuracy": 0.0008382229673093043,
+          "metadata": {
+            "layer": 7,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:8,Token:op2_last)']": {
+          "accuracy": 0.2009639564124057,
+          "metadata": {
+            "layer": 8,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:8,Token:last)']": {
+          "accuracy": 0.00041911148365465214,
+          "metadata": {
+            "layer": 8,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:9,Token:op2_last)']": {
+          "accuracy": 0.20159262363788769,
+          "metadata": {
+            "layer": 9,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:9,Token:last)']": {
+          "accuracy": 0.0008382229673093043,
+          "metadata": {
+            "layer": 9,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:10,Token:op2_last)']": {
+          "accuracy": 0.2001257334450964,
+          "metadata": {
+            "layer": 10,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:10,Token:last)']": {
+          "accuracy": 0.0006286672254819782,
+          "metadata": {
+            "layer": 10,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:11,Token:op2_last)']": {
+          "accuracy": 0.2026404023470243,
+          "metadata": {
+            "layer": 11,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:11,Token:last)']": {
+          "accuracy": 0.0006286672254819782,
+          "metadata": {
+            "layer": 11,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:12,Token:op2_last)']": {
+          "accuracy": 0.20305951383067897,
+          "metadata": {
+            "layer": 12,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:12,Token:last)']": {
+          "accuracy": 0.0006286672254819782,
+          "metadata": {
+            "layer": 12,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:13,Token:op2_last)']": {
+          "accuracy": 0.19488683989941324,
+          "metadata": {
+            "layer": 13,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:13,Token:last)']": {
+          "accuracy": 0.0014668901927912825,
+          "metadata": {
+            "layer": 13,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:14,Token:op2_last)']": {
+          "accuracy": 0.18860016764459347,
+          "metadata": {
+            "layer": 14,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:14,Token:last)']": {
+          "accuracy": 0.0027242246437552387,
+          "metadata": {
+            "layer": 14,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:15,Token:op2_last)']": {
+          "accuracy": 0.18440905280804695,
+          "metadata": {
+            "layer": 15,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:15,Token:last)']": {
+          "accuracy": 0.010477787091366304,
+          "metadata": {
+            "layer": 15,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:16,Token:op2_last)']": {
+          "accuracy": 0.02284157585917854,
+          "metadata": {
+            "layer": 16,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:16,Token:last)']": {
+          "accuracy": 0.3000838222967309,
+          "metadata": {
+            "layer": 16,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:17,Token:op2_last)']": {
+          "accuracy": 0.005029337803855826,
+          "metadata": {
+            "layer": 17,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:17,Token:last)']": {
+          "accuracy": 0.3088851634534786,
+          "metadata": {
+            "layer": 17,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:18,Token:op2_last)']": {
+          "accuracy": 0.0037720033528918693,
+          "metadata": {
+            "layer": 18,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:18,Token:last)']": {
+          "accuracy": 0.3113998323554065,
+          "metadata": {
+            "layer": 18,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:19,Token:op2_last)']": {
+          "accuracy": 0.0010477787091366304,
+          "metadata": {
+            "layer": 19,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:19,Token:last)']": {
+          "accuracy": 0.31391450125733444,
+          "metadata": {
+            "layer": 19,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:20,Token:op2_last)']": {
+          "accuracy": 0.00041911148365465214,
+          "metadata": {
+            "layer": 20,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:20,Token:last)']": {
+          "accuracy": 0.31391450125733444,
+          "metadata": {
+            "layer": 20,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:21,Token:op2_last)']": {
+          "accuracy": 0.0006286672254819782,
+          "metadata": {
+            "layer": 21,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:21,Token:last)']": {
+          "accuracy": 0.31391450125733444,
+          "metadata": {
+            "layer": 21,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:22,Token:op2_last)']": {
+          "accuracy": 0.0,
+          "metadata": {
+            "layer": 22,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:22,Token:last)']": {
+          "accuracy": 0.31391450125733444,
+          "metadata": {
+            "layer": 22,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:23,Token:op2_last)']": {
+          "accuracy": 0.0,
+          "metadata": {
+            "layer": 23,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:23,Token:last)']": {
+          "accuracy": 0.31391450125733444,
+          "metadata": {
+            "layer": 23,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:24,Token:op2_last)']": {
+          "accuracy": 0.0,
+          "metadata": {
+            "layer": 24,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:24,Token:last)']": {
+          "accuracy": 0.31391450125733444,
+          "metadata": {
+            "layer": 24,
+            "position": "last"
+          }
+        },
+        "[id='ResidualStream(Layer:25,Token:op2_last)']": {
+          "accuracy": 0.0,
+          "metadata": {
+            "layer": 25,
+            "position": "op2_last"
+          }
+        },
+        "[id='ResidualStream(Layer:25,Token:last)']": {
+          "accuracy": 0.31391450125733444,
+          "metadata": {
+            "layer": 25,
+            "position": "last"
+          }
+        }
+      }
+    }
+  }
+}
