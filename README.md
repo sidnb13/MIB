@@ -52,7 +52,7 @@ This track benchmarks circuit discovery methods—i.e., methods for locating gra
 2. Ablate all components from the network except those that surpass some importance threshold, or those in the top k%.
 3. Evaluate how well the circuit (model with only the most important components not ablated) performs, or replicates the full model's behavior.
 
-In the circuit localization track's repository, we provide code for discovering and evaluating circuits.
+In the [circuit localization track's repository](https://github.com/hannamw/MIB-circuit-track), we provide code for discovering and evaluating circuits.
 
 Notice that step (3) mentioned *two distinct* evaluation criteria: how well the circuit performs, and how well the circuit replicates the model's behavior. Past work often implicitly conflates these two, whether by discovering a circuit using one criterion and then evaluating another, or by not clarifying the precise goals. We believe these are complementary but separate concepts, so we split them into two separate evaluation metrics. See [circuit localization repo](https://github.com/hannamw/MIB-circuit-track) or [the paper](https://arxiv.org/abs/2504.13151) for more details.
 
@@ -69,7 +69,7 @@ This track benchmarks featurization methods—i.e., methods for transforming mod
 2. If using a supervised method, train the featurization method using the contrastive pairs.
 3. To evaluate: feed the model an input from a pair, use the featurizer to transform an activation vector, intervene in the transformed space, transform back out, and see whether the model's new behavior aligns with what is expected under the intervention.
 
-In the causal variable localization track's repository, we provide code for training and evaluating featurizers.
+In the [causal variable localization track's repository](https://github.com/atticusg/CausalAbstraction), we provide code for training and evaluating featurizers.
 
 # Data and Models
 
