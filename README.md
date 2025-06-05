@@ -73,7 +73,7 @@ In the [causal variable localization track's repository](https://github.com/atti
 
 # Data and Models
 
-Our benchmark consists of four datasets: IOI, MCQA, Arithmetic, and ARC. These were chosen to represent (1) a mixture of commonly studied and unstudied tasks, (2) tasks of varying formats, and (3) tasks of varying difficulty levels. Each dataset comes with 
+Our benchmark consists of five datasets: IOI, MCQA, Arithmetic, ARC, and RAVEL. These were chosen to represent (1) a mixture of commonly studied and unstudied tasks, (2) tasks of varying formats, and (3) tasks of varying difficulty levels. Each dataset comes with a train, validation and public test set. We also hold out a private test set, which can only be evaluated on by submitting to [the leaderboard](https://huggingface.co/spaces/mib-bench/leaderboard).
 
 Mechanistic interpretability comparisons are only valid for a given task-and-model pair. Thus, we choose four realisitic language models of varying sizes and capability levels to standardize comparisons: GPT-2 Small, Qwen-2.5 (0.5B), Gemma-2 (2B), Llama-3.1 (8B). We also include an InterpBench model, which we train to encode a ground-truth circuit for the IOI task.
 
@@ -85,19 +85,19 @@ For more detail on how InterpBench models are trained, please see the [InterpBen
 
 # Leaderboard
 
-To encourage participation, we have created a leaderboard, hosted on HuggingFace. This leaderboard shows scores on the *private* test set. We have set a strict rate limit of 2 submission per user per week to discourage hill-climbing on the private test set.
+To encourage participation, we have created a [leaderboard, hosted on HuggingFace](https://huggingface.co/spaces/mib-bench/leaderboard). This leaderboard shows scores on the *private* test set. We have set a strict rate limit of 2 submission per user per week to discourage hill-climbing on the private test set.
 
-Our hope is that the public dev and test sets will enable fast iteration on mechanistic interpretability methods, while the private test will remain a more stable and meaningful measure of the state of the art.
+Our hope is that the public validation and test sets will enable fast iteration on mechanistic interpretability methods, while the private test will remain a more stable and meaningful measure of the state of the art.
 
 # Submission
 
 To submit to the **MIB** leaderboard, you will need the following:
-- Circuit localization: 9 circuits per model/task combination. These should be of varying sizes, and satisfy the criteria described in the circuit localization repo.
-- Causal variable localization: a featurization function that follows the API format specified in the causal variable localization repo.
+- Circuit localization: 9 circuits per model/task combination. These should be of varying sizes, and satisfy the criteria described in the circuit localization repo. See [here](https://huggingface.co/mib-bench/mib-circuits-example/tree/main/importances/pt) for an example submission with one .pt file per model/task, and [here](https://huggingface.co/mib-bench/mib-circuits-example/tree/main/multiple_circuits/pt) for an example submission with separate circuit files for each circuit size threshold per model/task. See the [circuit localization track repository](https://github.com/hannamw/MIB-circuit-track) for more details on the format of these files.
+- Causal variable localization: a featurization function that follows the API format specified in the causal variable localization repo, a token position function specifying where the featurizer should be applied, and a folder containing trained (inverse) featurizers and token indices. See [here](https://huggingface.co/mib-bench/mib-causalvariable-example/tree/main) for an example submission. See the [causal variable localization track repository](https://github.com/atticusg/CausalAbstraction) for more details on the format of these files, and [this Jupyter notebook](https://github.com/aaronmueller/MIB/blob/main/causal_variable_example_submission.ipynb) for an example of how to get the trained featurizer and token indices files.
 
-Please ensure that your submission is valid using our automated submission checker script. Once you've verified, please contact the organizers and provide HuggingFace links to your required files. 
+The leaderboard submission portal will verify that your submission is in the correct format. For the circuit localization track, this is done on our backend.
 
-We are working on automated submission handling; stay tuned!
+For the causal variable localization track, please ensure that your submission is valid using our [automated submission checker script](https://github.com/aaronmueller/MIB/blob/main/causal_variable_verify_submission.py). Once you've verified, please provide the requested HF repository linking to your files. This should be a model repository, not a dataset.
 
 # Citation
 If you use any of the **MIB** datasets or code, please cite [our paper](https://arxiv.org/abs/2504.13151):
