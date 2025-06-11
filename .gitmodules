@@ -4,3 +4,6 @@
 [submodule "CausalAbstraction"]
 	path = CausalAbstraction
 	url = https://github.com/atticusg/CausalAbstraction
+[submodule "MIB-causal-variable-track/CausalAbstraction"]
+	path = MIB-causal-variable-track/CausalAbstraction
+	url = https://github.com/atticusg/CausalAbstraction
