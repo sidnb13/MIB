@@ -71,6 +71,8 @@ This track benchmarks featurization methods—i.e., methods for transforming mod
 
 In the [causal variable localization track's repository](https://github.com/atticusg/CausalAbstraction), we provide code for training and evaluating featurizers.
 
+We provide the results from our baseline experiments in [this Google Drive folder](https://drive.google.com/drive/folders/1StruQr0Cv3ay4dnFfcqZuwTDN4gn8vGS?usp=sharing). These results were generated using the scripts provided in this repo.
+
 # Data and Models
 
 Our benchmark consists of five datasets: IOI, MCQA, Arithmetic, ARC, and RAVEL. These were chosen to represent (1) a mixture of commonly studied and unstudied tasks, (2) tasks of varying formats, and (3) tasks of varying difficulty levels. Each dataset comes with a train, validation and public test set. We also hold out a private test set, which can only be evaluated on by submitting to [the leaderboard](https://huggingface.co/spaces/mib-bench/leaderboard).
