@@ -6,7 +6,7 @@ This file provides the same SubspaceFeaturizer functionality in a self-contained
 import torch
 import torch.nn as nn
 import pyvene as pv
-from CausalAbstraction.model_units.model_units import Featurizer
+from CausalAbstraction.neural.featurizers import Featurizer
 
 
 class SubspaceFeaturizerModuleCopy(torch.nn.Module):
