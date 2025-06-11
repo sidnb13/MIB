@@ -1,0 +1,74 @@
+{
+  "method_name": "full_vector",
+  "model_name": "GPT2LMHeadModel",
+  "task_name": "ioi_task",
+  "target_variables": "output_position",
+  "dataset": {
+    "s1_io_flip_test": {
+      "model_unit": {
+        "[id='AttentionHead(Layer:7,Token:all)', id='AttentionHead(Layer:7,Token:all)', id='AttentionHead(Layer:8,Token:all)']": {
+          "accuracy": 3.130149832498469,
+          "metadata": {
+            "layer": 7,
+            "position": "all"
+          }
+        }
+      }
+    },
+    "s2_io_flip_test": {
+      "model_unit": {
+        "[id='AttentionHead(Layer:7,Token:all)', id='AttentionHead(Layer:7,Token:all)', id='AttentionHead(Layer:8,Token:all)']": {
+          "accuracy": 1.978536127505124,
+          "metadata": {
+            "layer": 7,
+            "position": "all"
+          }
+        }
+      }
+    },
+    "s1_ioi_flip_s2_ioi_flip_test": {
+      "model_unit": {
+        "[id='AttentionHead(Layer:7,Token:all)', id='AttentionHead(Layer:7,Token:all)', id='AttentionHead(Layer:8,Token:all)']": {
+          "accuracy": 2.230397219805921,
+          "metadata": {
+            "layer": 7,
+            "position": "all"
+          }
+        }
+      }
+    },
+    "s1_io_flip_testprivate": {
+      "model_unit": {
+        "[id='AttentionHead(Layer:7,Token:all)', id='AttentionHead(Layer:7,Token:all)', id='AttentionHead(Layer:8,Token:all)']": {
+          "accuracy": 4.618757516455889,
+          "metadata": {
+            "layer": 7,
+            "position": "all"
+          }
+        }
+      }
+    },
+    "s2_io_flip_testprivate": {
+      "model_unit": {
+        "[id='AttentionHead(Layer:7,Token:all)', id='AttentionHead(Layer:7,Token:all)', id='AttentionHead(Layer:8,Token:all)']": {
+          "accuracy": 2.8775244186893905,
+          "metadata": {
+            "layer": 7,
+            "position": "all"
+          }
+        }
+      }
+    },
+    "s1_ioi_flip_s2_ioi_flip_testprivate": {
+      "model_unit": {
+        "[id='AttentionHead(Layer:7,Token:all)', id='AttentionHead(Layer:7,Token:all)', id='AttentionHead(Layer:8,Token:all)']": {
+          "accuracy": 4.861864215622378,
+          "metadata": {
+            "layer": 7,
+            "position": "all"
+          }
+        }
+      }
+    }
+  }
+}

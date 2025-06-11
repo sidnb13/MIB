@@ -1,0 +1,74 @@
+{
+  "method_name": "full_vector",
+  "model_name": "GPT2LMHeadModel",
+  "task_name": "ioi_task",
+  "target_variables": "output_position",
+  "dataset": {
+    "s1_io_flip_test": {
+      "model_unit": {
+        "[id='AttentionHead(Layer:8,Token:all)', id='AttentionHead(Layer:8,Token:all)']": {
+          "accuracy": 4.139124041073334,
+          "metadata": {
+            "layer": 8,
+            "position": "all"
+          }
+        }
+      }
+    },
+    "s2_io_flip_test": {
+      "model_unit": {
+        "[id='AttentionHead(Layer:8,Token:all)', id='AttentionHead(Layer:8,Token:all)']": {
+          "accuracy": 2.645091258204461,
+          "metadata": {
+            "layer": 8,
+            "position": "all"
+          }
+        }
+      }
+    },
+    "s1_ioi_flip_s2_ioi_flip_test": {
+      "model_unit": {
+        "[id='AttentionHead(Layer:8,Token:all)', id='AttentionHead(Layer:8,Token:all)']": {
+          "accuracy": 2.2177594889483823,
+          "metadata": {
+            "layer": 8,
+            "position": "all"
+          }
+        }
+      }
+    },
+    "s1_io_flip_testprivate": {
+      "model_unit": {
+        "[id='AttentionHead(Layer:8,Token:all)', id='AttentionHead(Layer:8,Token:all)']": {
+          "accuracy": 6.103850954226752,
+          "metadata": {
+            "layer": 8,
+            "position": "all"
+          }
+        }
+      }
+    },
+    "s2_io_flip_testprivate": {
+      "model_unit": {
+        "[id='AttentionHead(Layer:8,Token:all)', id='AttentionHead(Layer:8,Token:all)']": {
+          "accuracy": 3.98017779668083,
+          "metadata": {
+            "layer": 8,
+            "position": "all"
+          }
+        }
+      }
+    },
+    "s1_ioi_flip_s2_ioi_flip_testprivate": {
+      "model_unit": {
+        "[id='AttentionHead(Layer:8,Token:all)', id='AttentionHead(Layer:8,Token:all)']": {
+          "accuracy": 4.7218528579073205,
+          "metadata": {
+            "layer": 8,
+            "position": "all"
+          }
+        }
+      }
+    }
+  }
+}
