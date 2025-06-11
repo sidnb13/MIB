@@ -76,7 +76,7 @@ def get_causal_model():
     return CausalModel(variables, values, parents, mechanisms, id="arithmetic")
 
 
-def get_counterfactual_datasets(hf=True, size=None):
+def get_counterfactual_datasets(hf=True, size=None, load_private_data=False):
     """
     Load and return counterfactual datasets for arithmetic task.
     """
@@ -95,16 +95,17 @@ def get_counterfactual_datasets(hf=True, size=None):
             )
             datasets.update(temp)
 
-        private = load_hf_dataset(
-            dataset_path="mib-bench/arithmetic_addition_private_test",
-            split="test",
-            parse_fn=parse_arithmetic_example,
-            size=size,
-            filter_fn=lambda example: example["num_digit"] == 2,
-            ignore_names=["ones_op1", "ones_op2", "tens_op1", "tens_op2", "tens_carry"],
-            shuffle=True
-        )
-        datasets.update({k+"private":v for k,v in private.items()})
+        if load_private_data:
+            private = load_hf_dataset(
+                dataset_path="mib-bench/arithmetic_addition_private_test",
+                split="test",
+                parse_fn=parse_arithmetic_example,
+                size=size,
+                filter_fn=lambda example: example["num_digit"] == 2,
+                ignore_names=["ones_op1", "ones_op2", "tens_op1", "tens_op2", "tens_carry"],
+                shuffle=True
+            )
+            datasets.update({k+"private":v for k,v in private.items()})
 
         return datasets
     

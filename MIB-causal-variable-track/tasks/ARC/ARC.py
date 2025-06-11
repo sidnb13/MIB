@@ -66,7 +66,7 @@ def get_causal_model():
     return CausalModel(variables, values, parents, mechanisms, id=f"ARC_easy")
 
 
-def get_counterfactual_datasets(hf=True, size=None):
+def get_counterfactual_datasets(hf=True, size=None, load_private_data=False):
     """
     Load and return counterfactual datasets for ARC Easy task.
     """
@@ -89,16 +89,17 @@ def get_counterfactual_datasets(hf=True, size=None):
             )
             datasets.update(temp)
         
-        private = load_hf_dataset(
-            dataset_path="mib-bench/arc_easy_private_test",
-            split="test",
-            parse_fn=parse_arc_easy_example,
-            size=size,
-            ignore_names=["symbol"],
-            filter_fn=has_four_choices,  # Add filter to only keep 4-choice questions
-            shuffle=True  # Shuffle the dataset for better training
-        )
-        datasets.update({k+"private":v for k,v in private.items()})
+        if load_private_data:
+            private = load_hf_dataset(
+                dataset_path="mib-bench/arc_easy_private_test",
+                split="test",
+                parse_fn=parse_arc_easy_example,
+                size=size,
+                ignore_names=["symbol"],
+                filter_fn=has_four_choices,  # Add filter to only keep 4-choice questions
+                shuffle=True  # Shuffle the dataset for better training
+            )
+            datasets.update({k+"private":v for k,v in private.items()})
         
         return datasets
     

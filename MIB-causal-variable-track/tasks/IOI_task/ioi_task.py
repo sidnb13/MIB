@@ -171,7 +171,7 @@ def parse_ioi_example(input):
 
     return output
 
-def get_counterfactual_datasets(hf=True, size=None):
+def get_counterfactual_datasets(hf=True, size=None, load_private_data=False):
     """
     Load and return counterfactual datasets for IOI task.
     """
@@ -189,14 +189,15 @@ def get_counterfactual_datasets(hf=True, size=None):
         )
         datasets.update(temp)
     
-    private = load_hf_dataset(
-        dataset_path="mib-bench/ioi_private_test",
-        split="test",
-        parse_fn=parse_ioi_example,
-        size=size,
-        ignore_names=["random", "abc"]
-    )
-    datasets.update({k+"private":v for k,v in private.items()})
+    if load_private_data:
+        private = load_hf_dataset(
+            dataset_path="mib-bench/ioi_private_test",
+            split="test",
+            parse_fn=parse_ioi_example,
+            size=size,
+            ignore_names=["random", "abc"]
+        )
+        datasets.update({k+"private":v for k,v in private.items()})
     
     # Add "same" counterfactual dataset as post-processing step
     # For each existing dataset, create a "same" version where counterfactual_inputs equals input

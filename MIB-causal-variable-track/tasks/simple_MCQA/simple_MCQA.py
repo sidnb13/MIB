@@ -79,7 +79,7 @@ def get_causal_model():
     return CausalModel(variables, values, parents, mechanisms, id=f"{NUM_CHOICES}_answer_MCQA")
 
 
-def get_counterfactual_datasets(hf=True, size=None):
+def get_counterfactual_datasets(hf=True, size=None, load_private_data=False):
     NUM_CHOICES = 4  # Assuming this is fixed at 4 as in the original code
     
     if hf:
@@ -95,15 +95,16 @@ def get_counterfactual_datasets(hf=True, size=None):
                 ignore_names=["noun", "color", "symbol"]
             )
             datasets.update(temp)
-        private = load_hf_dataset(
-            dataset_path="mib-bench/copycolors_mcqa_private_test",
-            split="test",
-            name=f"{NUM_CHOICES}_answer_choices",
-            parse_fn=parse_mcqa_example,
-            size=size,
-            ignore_names=["noun", "color", "symbol"]
-        )
-        datasets.update({k+"private":v for k,v in private.items()})
+        if load_private_data:
+            private = load_hf_dataset(
+                dataset_path="mib-bench/copycolors_mcqa_private_test",
+                split="test",
+                name=f"{NUM_CHOICES}_answer_choices",
+                parse_fn=parse_mcqa_example,
+                size=size,
+                ignore_names=["noun", "color", "symbol"]
+            )
+            datasets.update({k+"private":v for k,v in private.items()})
         
         return datasets
     

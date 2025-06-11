@@ -136,7 +136,7 @@ def get_causal_model():
     return CausalModel(variables, values, parents, mechanisms, id="RAVEL")
 
 
-def get_counterfactual_datasets(hf=True, size=None):
+def get_counterfactual_datasets(hf=True, size=None, load_private_data=False):
     """
     Load and return counterfactual datasets for RAVEL task.
     """
@@ -157,14 +157,15 @@ def get_counterfactual_datasets(hf=True, size=None):
             datasets.update(temp)
             
         # Load private test set
-        private = load_hf_dataset(
-            dataset_path="mib-bench/ravel_private_test",
-            split="test",
-            parse_fn=parse_ravel_example,
-            size=size,
-            shuffle=True
-        )
-        datasets.update({k+"private": v for k, v in private.items()})
+        if load_private_data:
+            private = load_hf_dataset(
+                dataset_path="mib-bench/ravel_private_test",
+                split="test",
+                parse_fn=parse_ravel_example,
+                size=size,
+                shuffle=True
+            )
+            datasets.update({k+"private": v for k, v in private.items()})
         
         return datasets
     
