@@ -245,7 +245,6 @@ def setup_pipeline(model_name, device, eval_batch_size=None):
         # Special configuration for GPT2
         from transformers import GPT2Config
         gpt_config = GPT2Config.from_pretrained(model_path)
-        gpt_config._attn_implementation = "eager"
         pipeline = LMPipeline(model_path, max_new_tokens=1, device=device, dtype=torch.float32, 
                             max_length=32, logit_labels=True, position_ids=True, config=gpt_config)
     else:
