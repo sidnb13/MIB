@@ -194,6 +194,7 @@ if __name__ == "__main__":
                 checker=lambda logits, params: checker(logits, params, pipeline), 
                 verbose=verbose, 
                 results_dir=args.results_dir,
+                model_dir=args.model_dir,
                 heads_list=args.heads_list,
                 skip=[method for method in ["full_vector", "DAS", "DBM+SVD", "DBM+PCA", "DBM", "DBM+SAE"] if method not in args.methods]
             )
@@ -212,6 +213,7 @@ if __name__ == "__main__":
                 config=config, 
                 target_variables=["output_token"], 
                 checker=lambda logits, params: checker(logits, params, pipeline), 
+                model_dir=args.model_dir,
                 verbose=verbose, 
                 results_dir=args.results_dir,
                 heads_list=args.heads_list,
