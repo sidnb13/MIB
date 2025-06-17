@@ -87,28 +87,48 @@ def import_custom_modules(submission_path):
 
 def load_linear_params(submission_path, model_name):
     """
-    Load linear parameters for IOI causal model.
+    Load linear parameters for IOI causal model from any JSON file in submission folder.
     
     Args:
         submission_path (str): Path to submission folder
         model_name (str): Model name to look up parameters for
         
     Returns:
-        tuple: (linear_params_dict, heads_list)
+        dict: linear_params_dict
     """
-    # First try to load from submission folder
-    linear_params_file = os.path.join(submission_path, "ioi_linear_params.json")
-    if not os.path.exists(linear_params_file):
+    # Look for any JSON file in the submission folder
+    json_files = [f for f in os.listdir(submission_path) if f.endswith('.json')]
+    
+    linear_params_file = None
+    all_coeffs = None
+    
+    # Try each JSON file until we find one with valid linear parameters
+    for json_file in json_files:
+        file_path = os.path.join(submission_path, json_file)
+        try:
+            with open(file_path, 'r') as f:
+                data = json.load(f)
+                
+            # Check if this JSON contains model coefficients
+            # It should have model names as keys with coefficient dictionaries
+            if isinstance(data, dict) and any(isinstance(v, dict) and 'bias' in v and 'token_coeff' in v and 'position_coeff' in v for v in data.values()):
+                all_coeffs = data
+                linear_params_file = file_path
+                print(f"Found linear parameters in: {json_file}")
+                break
+        except Exception as e:
+            # Skip files that can't be parsed or don't have the right structure
+            continue
+    
+    if all_coeffs is None:
         # Fall back to baselines folder
         linear_params_file = "baselines/ioi_linear_params.json"
-    
-    print(f"Loading linear parameters from: {linear_params_file}")
-    
-    try:
-        with open(linear_params_file, 'r') as f:
-            all_coeffs = json.load(f)
-    except Exception as e:
-        raise ValueError(f"Failed to load linear_params: {e}")
+        print(f"No valid linear parameters found in submission folder, falling back to: {linear_params_file}")
+        try:
+            with open(linear_params_file, 'r') as f:
+                all_coeffs = json.load(f)
+        except Exception as e:
+            raise ValueError(f"Failed to load linear parameters from any source: {e}")
 
     # Find the coefficients for this model
     if model_name in all_coeffs:
@@ -166,7 +186,7 @@ def get_ioi_task_components(model_name, linear_params):
     model_id = model_mapping.get(model_name, model_name.lower())
     
     # Setup pipeline
-    device = "cuda:1" if torch.cuda.is_available() else "cpu"
+    device = "cuda" if torch.cuda.is_available() else "cpu"
     pipeline, _ = setup_pipeline(model_id, device, eval_batch_size=None)
     
     # Get causal model with linear parameters
@@ -274,7 +294,7 @@ def load_attention_head_featurizers(submission_folder_path):
                     print(f"Warning: Could not load indices for {base_name}: {e}")
                 
                 # Store in the featurizers dictionary with position_id "all"
-                featurizers[(layer, head, "all")] = featurizer
+                featurizers[(layer, head)] = featurizer
                 print(f"Loaded featurizer for layer {layer}, head {head}")
                 
         except Exception as e:
@@ -283,6 +303,7 @@ def load_attention_head_featurizers(submission_folder_path):
     
     print(f"Successfully loaded {len(featurizers)} attention head featurizers")
     return featurizers
+
 
 
 def evaluate_ioi_submission_task(task_folder_path, submission_base_path, private_data=True, public_data=False):
@@ -314,7 +335,7 @@ def evaluate_ioi_submission_task(task_folder_path, submission_base_path, private
         # Import custom modules from base submission folder
         _, token_position_module = import_custom_modules(submission_base_path)
         
-        # Load linear parameters
+        # Load linear parameters from ioi_linear_params.json
         linear_params = load_linear_params(submission_base_path, model)
         
         # Get task components
@@ -336,7 +357,19 @@ def evaluate_ioi_submission_task(task_folder_path, submission_base_path, private
         # Filter experiments - only keep examples where model performs well
         print("Filtering datasets based on model performance...")
         filter_experiment = FilterExperiment(pipeline, causal_model, filter_checker)
-        filtered_datasets = filter_experiment.filter(counterfactual_datasets, verbose=True, batch_size=32)
+
+        counterfactual_datasets = {k: v for k, v in counterfactual_datasets.items() if "test" in k and "same" not in k}
+        # Since we already loaded the appropriate data based on flags, 
+        # we just need to filter by public/private if both are loaded
+        if private_data and not public_data:
+            # Only keep private test data
+            counterfactual_datasets = {k: v for k, v in counterfactual_datasets.items() if "private" in k}
+        elif public_data and not private_data:
+            # Only keep public test data (this is the default case)
+            counterfactual_datasets = {k: v for k, v in counterfactual_datasets.items() if "private" not in k}
+        # If both flags are True, keep all test data
+
+        filtered_datasets = filter_experiment.filter(counterfactual_datasets, verbose=True, batch_size=1024)
         
         # Load pre-trained attention head featurizers from submission
         print("Loading pre-trained attention head featurizers...")
@@ -347,7 +380,7 @@ def evaluate_ioi_submission_task(task_folder_path, submission_base_path, private
             return False
         
         # Extract attention heads that actually have featurizers (convert from (layer, head, position) to (layer, head))
-        attention_heads = [(layer, head) for layer, head, _ in featurizers.keys()]
+        attention_heads = featurizers.keys()
         print(f"Found featurizers for attention heads: {attention_heads}")
         
         # Setup checker function for evaluation
@@ -358,8 +391,7 @@ def evaluate_ioi_submission_task(task_folder_path, submission_base_path, private
         # Create PatchAttentionHeads experiment with loaded featurizers
         config = {
             "method_name": "submission",
-            "batch_size": 32,
-            "evaluation_batch_size": 32,
+            "evaluation_batch_size": 1024,
             "output_scores": True,
             "check_raw": True
         }
@@ -388,7 +420,6 @@ def evaluate_ioi_submission_task(task_folder_path, submission_base_path, private
             test_data = {k: v for k, v in test_data.items() if "private" not in k}
         # If both flags are True, keep all test data
         
-        
         experiment.perform_interventions(
             test_data, 
             verbose=True, 
@@ -415,9 +446,9 @@ def main():
     parser = argparse.ArgumentParser(description="Evaluate IOI submissions for attention head tasks")
     parser.add_argument("--submission_folder", required=True, 
                        help="Path to IOI submission folder containing task subfolders")
-    parser.add_argument("--private_data", action="store_true", default=False,
+    parser.add_argument("--private_data", action="store_true", default=True,
                        help="Evaluate on private test data (default: False)")
-    parser.add_argument("--public_data", action="store_true", default=True,
+    parser.add_argument("--public_data", action="store_true", default=False,
                        help="Evaluate on public test data (default: True)")
     parser.add_argument("--specific_task", type=str, default=None,
                        help="Evaluate only a specific task folder")

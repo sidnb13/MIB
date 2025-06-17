@@ -300,12 +300,14 @@ def evaluate_submission_task(task_folder_path, submission_base_path, private_dat
         print("Loading datasets...")
         dataset_size = None  # Load all data
         counterfactual_datasets = get_counterfactual_datasets(hf=True, size=dataset_size, load_private_data=private_data)
+        counterfactual_datasets = {k: v for k, v in counterfactual_datasets.items() if "test" in k}
         
         # Filter datasets based on flags
         if not private_data:
             counterfactual_datasets = {k: v for k, v in counterfactual_datasets.items() if "private" not in k}
         if not public_data:
             counterfactual_datasets = {k: v for k, v in counterfactual_datasets.items() if "test" not in k or "private" in k}
+    
         
         print(f"Loaded {len(counterfactual_datasets)} datasets")
         
@@ -317,10 +319,19 @@ def evaluate_submission_task(task_folder_path, submission_base_path, private_dat
         def checker(output_text, expected):
             return expected in output_text
         
+
+        batch_size_by_task = {
+            "4_answer_MCQA": 128,
+            "ARC_easy": 32,
+            "arithmetic": 256,
+            "ravel_task": 128 
+        }
+
+        batch_size = batch_size_by_task.get(task)
         # Filter experiments - only keep examples where model performs well
         print("Filtering datasets based on model performance...")
         filter_experiment = FilterExperiment(pipeline, causal_model, checker)
-        filtered_datasets = filter_experiment.filter(counterfactual_datasets, verbose=True, batch_size=32)
+        filtered_datasets = filter_experiment.filter(counterfactual_datasets, verbose=True, batch_size=batch_size)
         
         # Load pre-trained featurizers from submission
         print("Loading pre-trained featurizers...")
@@ -337,9 +348,8 @@ def evaluate_submission_task(task_folder_path, submission_base_path, private_dat
         # Create PatchResidualStream experiment with loaded featurizers
         config = {
             "method_name": "submission",
-            "batch_size": 32,
-            "evaluation_batch_size": 32,
-            "output_scores": True
+            "batch_size": batch_size,
+            "evaluation_batch_size": batch_size 
         }
         
         # Only use layers that have featurizers in the submission
