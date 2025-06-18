@@ -1,0 +1,14 @@
+torch
+networkx
+matplotlib
+pandas
+numpy
+pyvene
+pytest
+scikit-learn
+ipywidgets
+jupyterlab
+ipycytoscape
+sae_lens
+transformers
+seaborn
