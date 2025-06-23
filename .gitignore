@@ -3,8 +3,10 @@ __pycache__/
 *.py[codz]
 *$py.class
 
-# Randoms tuff
-MIB-causal-variable-track/experiments/logs
+# Randoms stuff
+# MIB-causal-variable-track/experiments/logs
+MIB-causal-variable-track/logs
+logs/
 
 # C extensions
 *.so

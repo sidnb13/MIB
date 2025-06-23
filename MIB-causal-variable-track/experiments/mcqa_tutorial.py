@@ -5,7 +5,7 @@
 import sys
 from pathlib import Path
 
-sys.path.append(str(Path(__file__).parent.parent))
+sys.path.append(str(Path(__file__).parent.parent / "CausalAbstraction"))
 
 import random
 
@@ -249,7 +249,9 @@ for name, dataset in counterfactual_datasets.items():
 # # Loading in a Language Model
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
-model_name = "EleutherAI/pythia-410m"
+# model_name = "EleutherAI/pythia-410m"
+# model_name = "google/gemma-2-2b-it"
+model_name = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
 pipeline = LMPipeline(model_name, max_new_tokens=1, device=device, dtype=torch.float16)
 pipeline.tokenizer.padding_side = "left"
 print("DEVICE:", pipeline.model.device)
@@ -266,17 +268,17 @@ print("MODEL PREDICTION:", pipeline.dump(pipeline.generate(sampled_example["inpu
 
 # # Filtering Examples the Language Model Fails On
 
-from experiments.filter_experiment import FilterExperiment
+# from experiments.filter_experiment import FilterExperiment
 
 
-def checker(neural_output, causal_output):
-    return neural_output in causal_output
+# def checker(neural_output, causal_output):
+#     return neural_output in causal_output
 
 
-# Filter the datasets based on model performance
-print("\nFiltering datasets based on model performance...")
-exp = FilterExperiment(pipeline, MCQA_causal_model, checker)
-filtered_datasets = exp.filter(counterfactual_datasets, verbose=True, batch_size=128)
+# # Filter the datasets based on model performance
+# print("\nFiltering datasets based on model performance...")
+# exp = FilterExperiment(pipeline, MCQA_causal_model, checker)
+# filtered_datasets = exp.filter(counterfactual_datasets, verbose=True, batch_size=128)
 
 # # Definition token positions of interest
 
@@ -344,8 +346,9 @@ token_positions = [
 
 # Setup
 device = "cuda" if torch.cuda.is_available() else "cpu"
-model_name = "EleutherAI/pythia-410m"
+# model_name = "EleutherAI/pythia-410m"
 pipeline = LMPipeline(model_name, max_new_tokens=1, device=device, dtype=torch.float16)
+pipeline.tokenizer.padding_side = "left"
 
 # Data and model
 counterfactual_datasets = get_counterfactual_datasets(
@@ -366,8 +369,10 @@ config = {
     "evaluation_batch_size": 128,
     "training_epoch": 8,
     "n_features": 16,
+    "temperature_schedule": (0.3, 0.3),
+    "regularization_coefficient": 0.1,
     "intervenable_model_kwargs": {
-        "start_temperature": 0.1,
+        "start_temperature": 0.3,
         "learnable_temperature": False,
         "straight_through": False,
         "inference_binarization": True,
@@ -381,15 +386,25 @@ config = {
 experiment = PatchResidualStream(
     pipeline=pipeline,
     causal_model=causal_model,
-    layers=list(range(pipeline.get_num_layers())),
+    # layers=list(range(pipeline.get_num_layers())),
+    layers=[1],
     token_positions=token_positions,
     checker=checker,
     config=config,
 )
 
 experiment.train_interventions(
+    counterfactual_datasets, ["answer_pointer"], method="DBM", verbose=True
+)
+
+raw_results = experiment.perform_interventions(
     counterfactual_datasets,
-    ["answer_pointer"],
-    method="DBM",
     verbose=True,
+    target_variables_list=[["answer_pointer"]],
+    save_dir="logs/mcqa_tutorial_dbm",
+)
+
+print("\nHeatmaps for 'answer_position' variable:")
+experiment.plot_heatmaps(
+    raw_results, ["answer_pointer"], save_path="logs/mcqa_tutorial_dbm"
 )
