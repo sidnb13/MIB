@@ -252,6 +252,9 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 # model_name = "EleutherAI/pythia-410m"
 # model_name = "google/gemma-2-2b-it"
 model_name = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+# model_name = "google/gemma-2-2b-it"
+# model_name = "microsoft/Phi-4-mini-instruct"
+
 pipeline = LMPipeline(model_name, max_new_tokens=1, device=device, dtype=torch.float16)
 pipeline.tokenizer.padding_side = "left"
 print("DEVICE:", pipeline.model.device)
@@ -386,8 +389,8 @@ config = {
 experiment = PatchResidualStream(
     pipeline=pipeline,
     causal_model=causal_model,
-    # layers=list(range(pipeline.get_num_layers())),
-    layers=[1],
+    layers=list(range(pipeline.get_num_layers())),
+    # layers=[1],
     token_positions=token_positions,
     checker=checker,
     config=config,
