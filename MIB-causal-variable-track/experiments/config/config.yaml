@@ -1,0 +1,8 @@
+defaults:
+  - _self_
+  - override hydra/launcher: ray_jobs
+
+hydra:
+  launcher:
+    poll_jobs: false
+    entrypoint_num_gpus: 1

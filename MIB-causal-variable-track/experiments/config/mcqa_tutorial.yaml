@@ -1,0 +1,52 @@
+defaults:
+  - _self_
+  - override hydra/launcher: ray_jobs
+
+hydra:
+  launcher:
+    poll_jobs: false
+    entrypoint_num_gpus: 1
+
+# Model configuration
+model:
+  name: "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+  max_new_tokens: 1
+  dtype: "float16"
+
+# Data configuration
+data:
+  num_choices: 2
+  dataset_size: 100
+  use_hf: true
+  load_private_data: false
+
+# Training configuration
+training:
+  batch_size: 16
+  evaluation_batch_size: 128
+  training_epoch: 8
+  n_features: 16
+  init_lr: 1e-3
+  temperature_schedule: [0.3, 0.3]
+  regularization_coefficient: 0.01
+
+  # SelectionHead-style mask intervention parameters
+  mask_intervention:
+    use_ln: true
+    start_temperature: 0.5
+    end_temperature: 0.1
+    learnable_temperature: false
+    add_gumbel_noise: false
+    threshold: 0.5
+    straight_through: false
+
+# Experiment configuration
+experiment:
+  method: "DBM_OLD"
+  save_dir: "logs/mcqa_tutorial_hydra"
+  target_variables: ["answer_pointer"]
+  verbose: true
+
+  # Layer configuration - will be set to all layers by default
+  use_all_layers: true
+  specific_layers: null # Can be overridden to use specific layers like [1, 2, 3]

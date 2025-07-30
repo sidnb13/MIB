@@ -6,6 +6,10 @@ __pycache__/
 # Randoms stuff
 # MIB-causal-variable-track/experiments/logs
 MIB-causal-variable-track/logs
+MIB-causal-variable-track/outputs
+MIB-causal-variable-track/multirun
+outputs/
+multirun/
 logs/
 
 # C extensions
