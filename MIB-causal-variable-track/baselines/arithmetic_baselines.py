@@ -17,7 +17,7 @@ if __name__ == "__main__":
     parser.add_argument("--skip_llama", action="store_true", help="Skip running experiments for Llama model.")
     parser.add_argument("--use_gpu1", action="store_true", help="Use GPU1 instead of GPU0 if available.")
     parser.add_argument("--methods", nargs="+", 
-                        default=["full_vector", "DAS", "DBM+SVD", "DBM+PCA", "DBM", "DBM+SAE"], 
+                        default=["full_vector", "DAS", "DBM+SVD", "DBM+PCA", "DBM_OLD", "DBM+SAE"], 
                         help="List of methods to run")
     parser.add_argument("--batch_size", type=int, default=256, help="Batch size for training")
     parser.add_argument("--eval_batch_size", type=int, default=1024, help="Batch size for evaluation")

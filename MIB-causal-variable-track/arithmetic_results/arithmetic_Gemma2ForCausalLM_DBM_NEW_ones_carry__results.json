@@ -1,0 +1,951 @@
+{
+  "method_name": "DBM_NEW",
+  "model_name": "Gemma2ForCausalLM",
+  "task_name": "arithmetic",
+  "dataset": {
+    "random_test": {
+      "model_unit": {
+        "[[AtomicModelUnit(id='ResidualStream(Layer:0,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 0,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.5128205128205128
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:0,Token:last)')]]": {
+          "metadata": {
+            "layer": 0,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.5105908584169454
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:1,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 1,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.5061315496098104
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:1,Token:last)')]]": {
+          "metadata": {
+            "layer": 1,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.5094760312151616
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:2,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 2,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.44481605351170567
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:2,Token:last)')]]": {
+          "metadata": {
+            "layer": 2,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.5094760312151616
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:3,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 3,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.4459308807134894
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:3,Token:last)')]]": {
+          "metadata": {
+            "layer": 3,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.5072463768115942
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:4,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 4,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.4414715719063545
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:4,Token:last)')]]": {
+          "metadata": {
+            "layer": 4,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.5094760312151616
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:5,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 5,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.443701226309922
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:5,Token:last)')]]": {
+          "metadata": {
+            "layer": 5,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.5061315496098104
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:6,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 6,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.411371237458194
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:6,Token:last)')]]": {
+          "metadata": {
+            "layer": 6,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.5072463768115942
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:7,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 7,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.411371237458194
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:7,Token:last)')]]": {
+          "metadata": {
+            "layer": 7,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.5072463768115942
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:8,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 8,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.4080267558528428
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:8,Token:last)')]]": {
+          "metadata": {
+            "layer": 8,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.5072463768115942
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:9,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 9,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.4124860646599777
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:9,Token:last)')]]": {
+          "metadata": {
+            "layer": 9,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.5072463768115942
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:10,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 10,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.40022296544035674
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:10,Token:last)')]]": {
+          "metadata": {
+            "layer": 10,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.5061315496098104
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:11,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 11,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.399108138238573
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:11,Token:last)')]]": {
+          "metadata": {
+            "layer": 11,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.5072463768115942
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:12,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 12,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.3979933110367893
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:12,Token:last)')]]": {
+          "metadata": {
+            "layer": 12,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.5083612040133779
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:13,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 13,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.4682274247491639
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:13,Token:last)')]]": {
+          "metadata": {
+            "layer": 13,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.48494983277591974
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:14,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 14,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.48494983277591974
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:14,Token:last)')]]": {
+          "metadata": {
+            "layer": 14,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.4459308807134894
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:15,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 15,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.48717948717948717
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:15,Token:last)')]]": {
+          "metadata": {
+            "layer": 15,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.4080267558528428
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:16,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 16,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.5039018952062431
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:16,Token:last)')]]": {
+          "metadata": {
+            "layer": 16,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.2853957636566332
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:17,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 17,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.5117056856187291
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:17,Token:last)')]]": {
+          "metadata": {
+            "layer": 17,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.24972129319955408
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:18,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 18,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.5128205128205128
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:18,Token:last)')]]": {
+          "metadata": {
+            "layer": 18,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.19063545150501673
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:19,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 19,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.5105908584169454
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:19,Token:last)')]]": {
+          "metadata": {
+            "layer": 19,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.19063545150501673
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:20,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 20,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.5128205128205128
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:20,Token:last)')]]": {
+          "metadata": {
+            "layer": 20,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.18840579710144928
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:21,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 21,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.5117056856187291
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:21,Token:last)')]]": {
+          "metadata": {
+            "layer": 21,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.18840579710144928
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:22,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 22,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.5105908584169454
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:22,Token:last)')]]": {
+          "metadata": {
+            "layer": 22,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.18840579710144928
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:23,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 23,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.5094760312151616
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:23,Token:last)')]]": {
+          "metadata": {
+            "layer": 23,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.18840579710144928
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:24,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 24,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.5105908584169454
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:24,Token:last)')]]": {
+          "metadata": {
+            "layer": 24,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.18840579710144928
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:25,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 25,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.5105908584169454
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:25,Token:last)')]]": {
+          "metadata": {
+            "layer": 25,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.18840579710144928
+          }
+        }
+      }
+    },
+    "ones_carry_test": {
+      "model_unit": {
+        "[[AtomicModelUnit(id='ResidualStream(Layer:0,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 0,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.18843683083511778
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:0,Token:last)')]]": {
+          "metadata": {
+            "layer": 0,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.0
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:1,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 1,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.18843683083511778
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:1,Token:last)')]]": {
+          "metadata": {
+            "layer": 1,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.0
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:2,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 2,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.1873661670235546
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:2,Token:last)')]]": {
+          "metadata": {
+            "layer": 2,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.0
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:3,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 3,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.18950749464668093
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:3,Token:last)')]]": {
+          "metadata": {
+            "layer": 3,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.0
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:4,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 4,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.18843683083511778
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:4,Token:last)')]]": {
+          "metadata": {
+            "layer": 4,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.0
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:5,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 5,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.1905781584582441
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:5,Token:last)')]]": {
+          "metadata": {
+            "layer": 5,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.0
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:6,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 6,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.18950749464668093
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:6,Token:last)')]]": {
+          "metadata": {
+            "layer": 6,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.0
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:7,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 7,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.1905781584582441
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:7,Token:last)')]]": {
+          "metadata": {
+            "layer": 7,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.0
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:8,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 8,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.18950749464668093
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:8,Token:last)')]]": {
+          "metadata": {
+            "layer": 8,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.0
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:9,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 9,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.1905781584582441
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:9,Token:last)')]]": {
+          "metadata": {
+            "layer": 9,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.0
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:10,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 10,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.1905781584582441
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:10,Token:last)')]]": {
+          "metadata": {
+            "layer": 10,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.0
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:11,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 11,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.18843683083511778
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:11,Token:last)')]]": {
+          "metadata": {
+            "layer": 11,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.0010706638115631692
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:12,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 12,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.18843683083511778
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:12,Token:last)')]]": {
+          "metadata": {
+            "layer": 12,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.0021413276231263384
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:13,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 13,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.18201284796573874
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:13,Token:last)')]]": {
+          "metadata": {
+            "layer": 13,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.004282655246252677
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:14,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 14,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.17880085653104924
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:14,Token:last)')]]": {
+          "metadata": {
+            "layer": 14,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.008565310492505354
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:15,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 15,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.17237687366167023
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:15,Token:last)')]]": {
+          "metadata": {
+            "layer": 15,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.023554603854389723
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:16,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 16,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.018201284796573874
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:16,Token:last)')]]": {
+          "metadata": {
+            "layer": 16,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.2740899357601713
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:17,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 17,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.011777301927194861
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:17,Token:last)')]]": {
+          "metadata": {
+            "layer": 17,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.28051391862955033
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:18,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 18,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.008565310492505354
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:18,Token:last)')]]": {
+          "metadata": {
+            "layer": 18,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.2826552462526767
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:19,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 19,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.0010706638115631692
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:19,Token:last)')]]": {
+          "metadata": {
+            "layer": 19,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.2837259100642398
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:20,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 20,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.0021413276231263384
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:20,Token:last)')]]": {
+          "metadata": {
+            "layer": 20,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.2837259100642398
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:21,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 21,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.0010706638115631692
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:21,Token:last)')]]": {
+          "metadata": {
+            "layer": 21,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.2837259100642398
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:22,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 22,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.0
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:22,Token:last)')]]": {
+          "metadata": {
+            "layer": 22,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.2837259100642398
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:23,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 23,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.0
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:23,Token:last)')]]": {
+          "metadata": {
+            "layer": 23,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.2837259100642398
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:24,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 24,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.0
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:24,Token:last)')]]": {
+          "metadata": {
+            "layer": 24,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.284796573875803
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:25,Token:op2_last)')]]": {
+          "metadata": {
+            "layer": 25,
+            "position": "op2_last"
+          },
+          "ones_carry": {
+            "average_score": 0.0
+          }
+        },
+        "[[AtomicModelUnit(id='ResidualStream(Layer:25,Token:last)')]]": {
+          "metadata": {
+            "layer": 25,
+            "position": "last"
+          },
+          "ones_carry": {
+            "average_score": 0.284796573875803
+          }
+        }
+      }
+    }
+  }
+}

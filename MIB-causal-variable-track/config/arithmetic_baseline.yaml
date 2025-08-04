@@ -1,0 +1,83 @@
+defaults:
+  - _self_
+  - override hydra/launcher: ray_jobs
+
+hydra:
+  launcher:
+    poll_jobs: false
+    entrypoint_num_gpus: 1
+
+# Model configuration
+model:
+  models:
+    - "google/gemma-2-2b"
+    - "meta-llama/Meta-Llama-3.1-8B-Instruct"
+  skip_gemma: false
+  skip_llama: false
+  device: "cuda:0"
+  use_gpu1: false
+  dtype: "float16"
+  max_new_tokens:
+    gemma: 3
+    llama: 1
+    default: 3
+
+# Data configuration  
+data:
+  dataset_size: 10000
+  quick_test: false
+  quick_test_size: 10
+  names: ["random", "ones_carry"]
+  target_variables: ["ones_carry"]
+
+# Training configuration
+training:
+  batch_size: 256
+  evaluation_batch_size: 1024
+  training_epoch: 1
+  n_features: 16
+  regularization_coefficient: 0.0
+  output_scores: false
+  
+  # Model-specific batch sizes
+  model_specific:
+    llama:
+      batch_size: 256
+      evaluation_batch_size: 1024
+
+  # DBM_NEW specific configuration (SelectionHead-style mask intervention)
+  mask_intervention_kwargs:
+    use_ln: true
+    start_temperature: 0.5
+    end_temperature: 0.1
+    learnable_temperature: false
+    add_gumbel_noise: true
+    threshold: 0.5
+    straight_through: false
+    hard_mask: false
+    eps: 1e-6
+
+# Experiment configuration
+experiment:
+  methods: ["full_vector", "DAS", "DBM+SVD", "DBM+PCA", "DBM_OLD", "DBM+SAE"]
+  results_dir: "arithmetic_results"
+  model_dir: "arithmetic_models"
+  verbose: true
+  
+  # Layer configuration
+  layers:
+    start: 0
+    end: null  # null means use all layers (will be set programmatically)
+    quick_test_end: 1  # for quick test mode
+
+# DBM_NEW specific training configuration
+dbm_new:
+  training_epoch: 8
+  init_lr: 1e-3
+  regularization_coefficient: 0.01
+  max_output_tokens: 1
+  log_dir: "logs"
+  n_features: 16
+  temperature_schedule: [0.5, 0.1]
+  batch_size: 16
+  evaluation_batch_size: 128 

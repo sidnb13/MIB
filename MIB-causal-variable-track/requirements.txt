@@ -9,7 +9,6 @@ scikit-learn
 ipywidgets
 jupyterlab
 ipycytoscape
-sae_lens
 transformers
 seaborn
 tensorboard
