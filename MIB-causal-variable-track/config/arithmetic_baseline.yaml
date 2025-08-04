@@ -59,9 +59,9 @@ training:
 
 # Experiment configuration
 experiment:
-  methods: ["full_vector", "DAS", "DBM+SVD", "DBM+PCA", "DBM_OLD", "DBM+SAE"]
-  results_dir: "arithmetic_results"
-  model_dir: "arithmetic_models"
+  methods: ["full_vector", "DAS", "DBM+SVD", "DBM+PCA", "DBM_OLD", "DBM_NEW", "DBM+SAE"]
+  results_dir: "../assets/arithmetic_results"
+  model_dir: "../assets/arithmetic_models"
   verbose: true
   
   # Layer configuration
@@ -70,14 +70,4 @@ experiment:
     end: null  # null means use all layers (will be set programmatically)
     quick_test_end: 1  # for quick test mode
 
-# DBM_NEW specific training configuration
-dbm_new:
-  training_epoch: 8
-  init_lr: 1e-3
-  regularization_coefficient: 0.01
-  max_output_tokens: 1
-  log_dir: "logs"
-  n_features: 16
-  temperature_schedule: [0.5, 0.1]
-  batch_size: 16
-  evaluation_batch_size: 128 
+ 

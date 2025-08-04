@@ -3,6 +3,9 @@ from pathlib import Path
 
 sys.path.append(str(Path(__file__).resolve().parent.parent))
 sys.path.append(str(Path(__file__).resolve().parent.parent / "experiments"))
+sys.path.append(
+    str(Path(__file__).resolve().parent.parent / "CausalAbstraction")
+)
 
 import gc
 import os
@@ -202,113 +205,31 @@ def main(cfg: DictConfig) -> None:
                     name + "_testprivate"
                 ]
 
-        # Update config for DBM_NEW if it's in the methods
+        # Add mask intervention kwargs for DBM_NEW if it's in the methods
         if "DBM_NEW" in cfg.experiment.methods:
-            # Create DBM_NEW specific configuration
-            dbm_new_config = config.copy()
-            dbm_new_config.update(
-                {
-                    "training_epoch": cfg.dbm_new.training_epoch,
-                    "init_lr": cfg.dbm_new.init_lr,
-                    "regularization_coefficient": cfg.dbm_new.regularization_coefficient,
-                    "max_output_tokens": cfg.dbm_new.max_output_tokens,
-                    "log_dir": cfg.dbm_new.log_dir,
-                    "n_features": cfg.dbm_new.n_features,
-                    "temperature_schedule": tuple(cfg.dbm_new.temperature_schedule),
-                    "batch_size": cfg.dbm_new.batch_size,
-                    "evaluation_batch_size": cfg.dbm_new.evaluation_batch_size,
-                    "mask_intervention_kwargs": dict(
-                        cfg.training.mask_intervention_kwargs
-                    ),
-                }
+            config["mask_intervention_kwargs"] = dict(
+                cfg.training.mask_intervention_kwargs
             )
 
-            # Run experiments with DBM_NEW config if it's in methods
-            # We'll replace the general config with DBM_NEW config for this specific method
-            methods_to_run = cfg.experiment.methods.copy()
-            if "DBM_NEW" in methods_to_run:
-                # Run all other methods with regular config
-                other_methods = [m for m in methods_to_run if m != "DBM_NEW"]
-                if other_methods:
-                    residual_stream_baselines(
-                        pipeline=pipeline,
-                        task=causal_model,
-                        token_positions=token_positions,
-                        train_data=train_data,
-                        test_data=test_data,
-                        config=config,
-                        target_variables=cfg.data.target_variables,
-                        checker=checker,
-                        start=start,
-                        end=end,
-                        verbose=cfg.experiment.verbose,
-                        model_dir=os.path.join(
-                            cfg.experiment.model_dir,
-                            "_".join(cfg.data.target_variables),
-                        ),
-                        results_dir=cfg.experiment.results_dir,
-                        methods=other_methods,
-                    )
-
-                # Run DBM_NEW with its specific config
-                residual_stream_baselines(
-                    pipeline=pipeline,
-                    task=causal_model,
-                    token_positions=token_positions,
-                    train_data=train_data,
-                    test_data=test_data,
-                    config=dbm_new_config,
-                    target_variables=cfg.data.target_variables,
-                    checker=checker,
-                    start=start,
-                    end=end,
-                    verbose=cfg.experiment.verbose,
-                    model_dir=os.path.join(
-                        cfg.experiment.model_dir, "_".join(cfg.data.target_variables)
-                    ),
-                    results_dir=cfg.experiment.results_dir,
-                    methods=["DBM_NEW"],
-                )
-            else:
-                # No DBM_NEW, run all methods with regular config
-                residual_stream_baselines(
-                    pipeline=pipeline,
-                    task=causal_model,
-                    token_positions=token_positions,
-                    train_data=train_data,
-                    test_data=test_data,
-                    config=config,
-                    target_variables=cfg.data.target_variables,
-                    checker=checker,
-                    start=start,
-                    end=end,
-                    verbose=cfg.experiment.verbose,
-                    model_dir=os.path.join(
-                        cfg.experiment.model_dir, "_".join(cfg.data.target_variables)
-                    ),
-                    results_dir=cfg.experiment.results_dir,
-                    methods=cfg.experiment.methods,
-                )
-        else:
-            # No DBM_NEW, run all methods with regular config
-            residual_stream_baselines(
-                pipeline=pipeline,
-                task=causal_model,
-                token_positions=token_positions,
-                train_data=train_data,
-                test_data=test_data,
-                config=config,
-                target_variables=cfg.data.target_variables,
-                checker=checker,
-                start=start,
-                end=end,
-                verbose=cfg.experiment.verbose,
-                model_dir=os.path.join(
-                    cfg.experiment.model_dir, "_".join(cfg.data.target_variables)
-                ),
-                results_dir=cfg.experiment.results_dir,
-                methods=cfg.experiment.methods,
-            )
+        # Run all experiments with the same config
+        residual_stream_baselines(
+            pipeline=pipeline,
+            task=causal_model,
+            token_positions=token_positions,
+            train_data=train_data,
+            test_data=test_data,
+            config=config,
+            target_variables=cfg.data.target_variables,
+            checker=checker,
+            start=start,
+            end=end,
+            verbose=cfg.experiment.verbose,
+            model_dir=os.path.join(
+                cfg.experiment.model_dir, "_".join(cfg.data.target_variables)
+            ),
+            results_dir=cfg.experiment.results_dir,
+            methods=cfg.experiment.methods,
+        )
 
         clear_memory()
 
